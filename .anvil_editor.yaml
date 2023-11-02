@@ -18,7 +18,6 @@ unique_ids:
     log_in_form.Home.borrowers: '1698510391677311917004052.9009'
     log_in_form.Home.lenders: '1698510463208765568412581.0891'
     log_in_form.Home.ROI: '1698728518958724320447228.9803'
-    log_in_form.Home.Help: '1698934611873813121741626.8088'
   modules: {}
   server_modules:
     ServerModule1: '1698747873220484267261740.3767'
