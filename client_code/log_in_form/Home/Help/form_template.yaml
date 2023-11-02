@@ -12,6 +12,18 @@ components:
     properties: {}
     name: link_1
     layout_properties: {grid_position: 'KZEUGJ,FRNWDQ'}
+  - type: Button
+    properties: {text: button_1}
+    name: button_1
+    layout_properties: {grid_position: 'ECMXDH,OTNKAD'}
+  - type: Label
+    properties: {}
+    name: label_1
+    layout_properties: {grid_position: 'QAZSJT,INCVDI'}
+  - type: DatePicker
+    properties: {}
+    name: date_picker_1
+    layout_properties: {grid_position: 'NIRHLF,ZVFALB'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
