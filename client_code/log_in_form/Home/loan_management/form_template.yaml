@@ -34,13 +34,6 @@ components:
     layout_properties: {grid_position: 'GAWPTG,ETBNFC'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: 'Loans Disbursed ', font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_2
-    layout_properties: {grid_position: 'QPSHPE,BGHCBY'}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Manual Disbursement, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
