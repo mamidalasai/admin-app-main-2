@@ -55,6 +55,13 @@ components:
     layout_properties: {grid_position: 'EEXGMJ,AANECF'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: ' Rejected loans', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_6
+    layout_properties: {grid_position: 'EEXGMJ,RTZTFE'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Under process, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
@@ -62,18 +69,11 @@ components:
     layout_properties: {grid_position: 'GWQEJZ,HSGOYD'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: ' Rejected loans', font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_6
-    layout_properties: {grid_position: 'RDVQJY,LARVCP'}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Closed loans, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: label_7
-    layout_properties: {grid_position: 'ZTHPYJ,MBGYKQ'}
+    layout_properties: {grid_position: 'GWQEJZ,ATSJYS'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Lapsed, font_size: null, font: '', spacing_above: small,
@@ -83,11 +83,11 @@ components:
     layout_properties: {grid_position: 'ZIDWBJ,ZRBHWL'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: Defaulters, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_9
-    layout_properties: {grid_position: 'JGEFHY,IMOXKS'}
+      visible: true, text: NPA, font_size: null, font: '', spacing_above: small, icon_align: left,
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: label_11
+    layout_properties: {grid_position: 'ZIDWBJ,RSETBC'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: OTS, font_size: null, font: '', spacing_above: small, icon_align: left,
@@ -97,11 +97,11 @@ components:
     layout_properties: {grid_position: 'XJUINX,QGRIGK'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: NPA, font_size: null, font: '', spacing_above: small, icon_align: left,
-      spacing_below: small, italic: false, background: '', bold: false, underline: false,
-      icon: ''}
-    name: label_11
-    layout_properties: {grid_position: 'TSZDQX,FZKYRU'}
+      visible: true, text: Defaulters, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_9
+    layout_properties: {grid_position: 'XJUINX,FEEDUM'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
