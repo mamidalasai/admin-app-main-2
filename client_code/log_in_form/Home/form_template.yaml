@@ -130,11 +130,11 @@ components:
     - type: Button
       properties: {role: outlined-button, align: center, tooltip: '', border: '',
         enabled: true, foreground: '#0876E8', visible: true, text: '      Performance
-          Tracke           ', font_size: null, font: '', spacing_above: small, icon_align: left,
+          Tracker           ', font_size: null, font: '', spacing_above: small, icon_align: left,
         spacing_below: small, italic: false, background: '', bold: false, underline: false,
         icon: 'fa:compass'}
       name: button_13
-      layout_properties: {x: 617, y: 281.3999938964844, width: 241}
+      layout_properties: {x: 617.0000305175781, y: 281.3999938964844, width: 241}
       event_bindings: {click: button_13_click}
 - type: FlowPanel
   properties: {}
