@@ -32,6 +32,50 @@ components:
       underline: false, icon: ''}
     name: label_1
     layout_properties: {grid_position: 'GAWPTG,ETBNFC'}
+  - type: Link
+    properties: {role: null, url: '', align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: 'Loans Disbursed ', font_size: null, wrap_on: mobile, font: '',
+      col_spacing: medium, spacing_above: small, icon_align: left, col_widths: '',
+      spacing_below: small, italic: false, background: '', bold: false, underline: false,
+      icon: ''}
+    name: link_2
+    layout_properties: {grid_position: 'VYUFHP,KKYJVY'}
+  - type: Link
+    properties: {}
+    name: link_3
+    layout_properties: {grid_position: 'VYUFHP,KRLYQV'}
+  - type: Link
+    properties: {}
+    name: link_4
+    layout_properties: {grid_position: 'VYUFHP,OLTFCK'}
+  - type: Link
+    properties: {}
+    name: link_5
+    layout_properties: {grid_position: 'WBEZSX,VNINYH'}
+  - type: Link
+    properties: {}
+    name: link_6
+    layout_properties: {grid_position: 'WBEZSX,GNIFFV'}
+  - type: Link
+    properties: {}
+    name: link_7
+    layout_properties: {grid_position: 'WBEZSX,IZYGTH'}
+  - type: Link
+    properties: {}
+    name: link_8
+    layout_properties: {grid_position: 'ZYZQED,QASUMB'}
+  - type: Link
+    properties: {}
+    name: link_9
+    layout_properties: {grid_position: 'ZYZQED,AOQKDI'}
+  - type: Link
+    properties: {}
+    name: link_10
+    layout_properties: {grid_position: 'ZYZQED,AFKZAI'}
+  - type: Link
+    properties: {}
+    name: link_11
+    layout_properties: {grid_position: 'GVUYQE,UATZJY'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: Manual Disbursement, font_size: null, font: '', spacing_above: small,
