@@ -25,6 +25,10 @@ components:
     name: link_1
     layout_properties: {grid_position: 'YQMXBN,OJZXOP'}
     event_bindings: {click: link_1_click}
+  - name: image_2
+    properties: {}
+    type: Image
+    layout_properties: {grid_position: 'ZUXRCA,SCHEIQ'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
