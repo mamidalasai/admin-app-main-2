@@ -15,3 +15,19 @@ class manage_settings(manage_settingsTemplate):
   def link_1_click(self, **event_args):
     """This method is called when the link is clicked"""
     open_form('log_in_form.Home')
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('log_in_form.Home.manage_settings.manage_membership')
+
+  def button_2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('log_in_form.Home.manage_settings.manage_roi')
+
+  def button_3_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('log_in_form.Home.manage_settings.manage_fee')
+
+  def button_4_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('log_in_form.Home.manage_settings.manage_facts')
