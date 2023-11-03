@@ -37,10 +37,10 @@ components:
             x: 0, y: 10}
         - type: Link
           properties: {role: selected, url: '', align: center, tooltip: '', border: '',
-            foreground: '#0876E8', visible: true, text: Home, font_size: null, wrap_on: mobile,
+            foreground: '#0876E8', visible: true, text: Back, font_size: null, wrap_on: mobile,
             font: '', col_spacing: medium, spacing_above: small, icon_align: left,
             col_widths: '', spacing_below: small, italic: false, background: '', bold: true,
-            underline: false, icon: 'fa:home'}
+            underline: false, icon: 'fa:backward'}
           name: link_1
           layout_properties: {x: 519.2000122070312, y: 10, width: 160}
           event_bindings: {click: link_1_click}

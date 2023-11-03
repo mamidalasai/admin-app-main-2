@@ -18,9 +18,9 @@ components:
       x: 0, y: 10}
   - type: Button
     properties: {role: null, align: right, tooltip: '', border: '', enabled: true,
-      foreground: '#0876E8', visible: true, text: Home, font_size: null, font: '',
+      foreground: '#0876E8', visible: true, text: Back, font_size: null, font: '',
       spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-      background: '', bold: true, underline: false, icon: 'fa:home'}
+      background: '', bold: true, underline: false, icon: 'fa:backward'}
     name: button_1
     layout_properties: {grid_position: 'OIHFRN,ARBGDK'}
     event_bindings: {click: button_1_click}
