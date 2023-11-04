@@ -16,13 +16,16 @@ class edit_form(edit_formTemplate):
     for row in data:
       a += 1
 
-    self.text_box_1.text = data[a]['name']
-    self.text_box_2.text = data[a]['email']
-    self.text_box_3.text = data[a]['number']
-    self.date_picker_1.date = data[a]['joining_date']
-    self.drop_down_1.selected_value = data[a]['role'] 
-    self.drop_down_2.selected_value = data[a]['permission']
-    
+    if a == -1:
+        alert("No Data Available Here")
+    else:
+      self.text_box_1.text = data[a]['name']
+      self.text_box_2.text = data[a]['email']
+      self.text_box_3.text = data[a]['number']
+      self.date_picker_1.date = data[a]['joining_date']
+      self.drop_down_1.selected_value = data[a]['role'] 
+      self.drop_down_2.selected_value = data[a]['permission']
+      
 
   def link_1_click(self, **event_args):
     """This method is called when the link is clicked"""
@@ -38,13 +41,15 @@ class edit_form(edit_formTemplate):
     for row in data:
       a += 1
 
-    
-    data[a]['name'] = self.text_box_1.text
-    data[a]['email'] = self.text_box_2.text
-    data[a]['number'] = self.text_box_3.text
-    data[a]['joining_date'] = self.date_picker_1.date
-    data[a]['role'] = self.drop_down_1.selected_value
-    data[a]['permission'] = self.drop_down_2.selected_value
-    
-    print(a)
-    open_form('log_in_form.Home.admin_teams.view_profile')
+    if a == -1:
+      alert("No Data Available Here")
+    else:
+      data[a]['name'] = self.text_box_1.text
+      data[a]['email'] = self.text_box_2.text
+      data[a]['number'] = self.text_box_3.text
+      data[a]['joining_date'] = self.date_picker_1.date
+      data[a]['role'] = self.drop_down_1.selected_value
+      data[a]['permission'] = self.drop_down_2.selected_value
+      
+      print(a)
+      open_form('log_in_form.Home.admin_teams.view_profile')

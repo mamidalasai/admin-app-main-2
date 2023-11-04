@@ -25,13 +25,16 @@ class update_form(update_formTemplate):
       a = -1
       for row in data:
         a += 1
-  
-      data[a]['name'] = self.text_box_1.text
-      data[a]['email'] = self.text_box_2.text
-      data[a]['number'] = self.text_box_3.text
-      data[a]['joining_date'] = self.date_picker_1.date
-      data[a]['role'] = self.drop_down_1.selected_value
-      data[a]['permission'] = self.drop_down_2.selected_value
-      
-      print(a)
-      open_form('log_in_form.Home.admin_teams.view_profile')
+
+      if a == -1:
+        alert("No Data Available Here")
+      else:
+        data[a]['name'] = self.text_box_1.text
+        data[a]['email'] = self.text_box_2.text
+        data[a]['number'] = self.text_box_3.text
+        data[a]['joining_date'] = self.date_picker_1.date
+        data[a]['role'] = self.drop_down_1.selected_value
+        data[a]['permission'] = self.drop_down_2.selected_value
+        
+        print(a)
+        open_form('log_in_form.Home.admin_teams.view_profile')

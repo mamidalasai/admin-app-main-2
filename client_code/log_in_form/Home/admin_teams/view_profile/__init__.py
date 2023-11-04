@@ -21,6 +21,7 @@ class view_profile(view_profileTemplate):
     
 
     data = tables.app_tables.admin_teams.search()
+    a = -1
     for row in data:
       self.name.append(row['name'])
       self.email.append(row['email'])
@@ -28,15 +29,18 @@ class view_profile(view_profileTemplate):
       self.joining_date.append(row['joining_date'])
       self.role.append(row['role'])
       self.permission.append(row['permission'])
+      a+=1
       
-    
-    self.label_7.text = self.name[-1]
-    self.label_8.text = self.email[-1]
-    self.label_9.text = self.number[-1]
-    self.label_10.text = self.joining_date[-1]
-    self.label_11.text = self.role[-1]
-    self.label_13.text = self.permission[-1]
-    print(self.permission)
+    if a == -1:
+      alert("No Data Available here")
+    else:
+      self.label_7.text = self.name[-1]
+      self.label_8.text = self.email[-1]
+      self.label_9.text = self.number[-1]
+      self.label_10.text = self.joining_date[-1]
+      self.label_11.text = self.role[-1]
+      self.label_13.text = self.permission[-1]
+     
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
@@ -57,15 +61,18 @@ class view_profile(view_profileTemplate):
     for row in data:
       a += 1
 
-    
-    last = data[a]
-    last.delete()
-    self.label_7.text = ""
-    self.label_8.text = ""
-    self.label_9.text = ""
-    self.label_10.text = ""
-    self.label_11.text = ""
-    self.label_13.text = ""
+
+    if a == -1:
+      alert("No Data Available here")
+    else:
+      last = data[a]
+      last.delete()
+      self.label_7.text = ""
+      self.label_8.text = ""
+      self.label_9.text = ""
+      self.label_10.text = ""
+      self.label_11.text = ""
+      self.label_13.text = ""
     
     
     
