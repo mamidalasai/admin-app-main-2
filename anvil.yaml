@@ -63,4 +63,39 @@ db_schema:
       admin_ui: {width: 200, order: 5}
       type: string
     title: admin_teams
+  manage_settings:
+    client: full
+    server: full
+    columns:
+    - name: manage_name
+      admin_ui: {width: 200, order: 0}
+      type: string
+    - name: tenure
+      admin_ui: {width: 200, order: 1}
+      type: string
+    - name: processing_fee
+      admin_ui: {width: 200, order: 2}
+      type: string
+    - name: extension_fee
+      admin_ui: {width: 200, order: 3}
+      type: string
+    - name: default_fee
+      admin_ui: {width: 200, order: 4}
+      type: string
+    - name: no_of_visitors
+      admin_ui: {width: 200, order: 5}
+      type: string
+    - name: no_of_borrowers
+      admin_ui: {width: 200, order: 6}
+      type: string
+    - name: no_of_lenders
+      admin_ui: {width: 200, order: 7}
+      type: string
+    - name: amount_disbursed
+      admin_ui: {order: 8, width: 200}
+      type: string
+    - name: lender_commitments
+      admin_ui: {width: 200, order: 8}
+      type: string
+    title: manage_settings
 renamed: true

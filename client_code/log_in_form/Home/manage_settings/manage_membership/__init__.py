@@ -5,6 +5,15 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
+
+
+def add_data_to_database(manage_name, tenure):
+    # Replace 'your_table_name' with the actual name of your database table
+    your_table = app_tables.manage_settings
+    # Add a new row to the database table
+    new_row = your_table.add_row(manage_name=manage_name, tenure=tenure)
+    # Commit the changes to the database
+    
 class manage_membership(manage_membershipTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -15,3 +24,11 @@ class manage_membership(manage_membershipTemplate):
   def link_1_click(self, **event_args):
     """This method is called when the link is clicked"""
     open_form('log_in_form.Home.manage_settings')
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    manage_name = self.drop_down_1.selected_value
+    tenure = self.drop_down_2.selected_value
+
+    add_data_to_database(manage_name, tenure)
+

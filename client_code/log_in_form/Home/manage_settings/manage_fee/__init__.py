@@ -5,6 +5,15 @@ import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
+
+def add_data_to_database(processing_fee, extension_fee, default_fee):
+    # Replace 'your_table_name' with the actual name of your database table
+    your_table = app_tables.manage_settings
+    # Add a new row to the database table
+    new_row = your_table.add_row(processing_fee=processing_fee, extension_fee=extension_fee, default_fee=default_fee)
+    
+
+
 class manage_fee(manage_feeTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
@@ -15,3 +24,11 @@ class manage_fee(manage_feeTemplate):
   def link_1_click(self, **event_args):
     """This method is called when the link is clicked"""
     open_form('log_in_form.Home.manage_settings')
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    processing_fee = self.text_box_1.text
+    extension_fee = self.text_box_2.text
+    default_fee = self.text_box_3.text
+
+    add_data_to_database(processing_fee, extension_fee, default_fee)

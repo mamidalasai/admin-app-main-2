@@ -24,10 +24,15 @@ def investment(initial_investment, tenure, membership_type, intrest_rate):
 
 
 @anvil.server.callable
-def generate_google_login_url():
-  return anvil.google.drive.login()
+def teams(name, email, number, joining_date, role, permission):
+  app_tables.admin_teams.add_row(name=name, email=email, number=number, joining_date=joining_date, role=role, permission=permission)
 
 
 @anvil.server.callable
-def teams(name, email, number, joining_date, role, permission):
-  app_tables.admin_teams.add_row(name=name, email=email, number=number, joining_date=joining_date, role=role, permission=permission)
+def settings(manage_name, tenure, processing_fee, extension_fee, default_fee, no_of_visitors, no_of_borrowers, no_of_lenders, lender_commitments, amount_disbursed):
+  app_tables.manage_settings.add_row(manage_name=manage_name, tenure=tenure, processing_fee=processing_fee,
+                                     extension_fee=extension_fee, default_fee=default_fee, no_of_visitors=no_of_visitors,
+                                     no_of_borrowers=no_of_borrowers, no_of_lenders=no_of_lenders, lender_commitments=lender_commitments,
+                                     amount_disbursed=amount_disbursed
+                                    )
+
