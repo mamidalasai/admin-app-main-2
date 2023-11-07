@@ -12,6 +12,28 @@ class manage_roi(manage_roiTemplate):
 
     # Any code you write here will run before the form opens.
 
-  def link_1_click(self, **event_args):
-    """This method is called when the link is clicked"""
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
     open_form('log_in_form.Home.manage_settings')
+
+  def button_2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    intial_investment = self.text_box_1.text
+    tenure = self.text_box_2.text
+    membership_type = self.drop_down_1.selected_value
+    intrest_rate = self.text_box_3.text
+    
+    anvil.server.call('investment', intial_investment, tenure,membership_type, intrest_rate)
+
+
+    initial_investment = float(self.text_box_1.text)
+    tenure = float(self.text_box_2.text)
+    membership_type = str(self.drop_down_1.selected_value)
+    interest_rate = float(self.text_box_3.text)
+
+    
+    future_value = int(initial_investment*(1+interest_rate/100))*int(tenure/12)
+    ROI = [(future_value-initial_investment)/initial_investment]*100
+
+    self.label_5.text = f"Your ROI is {ROI[0]}%"
+    self.label_6.text = f"Your Future value is {future_value}"
