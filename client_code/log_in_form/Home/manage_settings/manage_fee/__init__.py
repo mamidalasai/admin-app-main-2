@@ -31,4 +31,15 @@ class manage_fee(manage_feeTemplate):
     extension_fee = self.text_box_2.text
     default_fee = self.text_box_3.text
 
-    add_data_to_database(processing_fee, extension_fee, default_fee)
+    if processing_fee == "" or extension_fee == "" or default_fee == "":
+      Notification("Fill requires Details")
+    else:
+      add_data_to_database(processing_fee, extension_fee, default_fee)
+      self.text_box_1.text = self.text_box_1.focus()
+      self.text_box_2.text = self.text_box_2.focus()
+      self.text_box_3.text = self.text_box_3.focus()
+
+  def button_2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    
+    open_form('log_in_form.Home.manage_settings.manage_fee.fee_edit_form')

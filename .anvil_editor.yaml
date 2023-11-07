@@ -24,6 +24,7 @@ unique_ids:
     log_in_form.Home.manage_products: '1698510531650695240800375.4204'
     log_in_form.Home.loan_management.lapsed: '169900766496418104210797.048603'
     log_in_form.Home.manage_settings.manage_roi: '1698728518958724320447228.9803'
+    log_in_form.Home.manage_settings.manage_fee.fee_edit_form: '1699363428965272828870498.47583'
     log_in_form.Home.admin_teams.view_profile.edit_form: '1698907575731908465721374.0109'
     log_in_form.Home.risk_pool: '1698510663776338046362020.20764'
     log_in_form.Home.borrowers: '1698510391677311917004052.9009'

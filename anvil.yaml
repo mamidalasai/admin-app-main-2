@@ -4,7 +4,7 @@ services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: log_in_form.Home}
+startup: {type: form, module: log_in_form.Home.manage_settings}
 package_name: Admin_app
 allow_embedding: false
 name: admin-app-main
