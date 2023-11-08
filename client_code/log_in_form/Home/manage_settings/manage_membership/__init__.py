@@ -38,3 +38,17 @@ class manage_membership(manage_membershipTemplate):
     data = self.collect_data_from_form()
     anvil.server.call('insert_data_to_database', data)
 
+    delete = app_tables.manage_settings.search()
+
+    delete_name = []
+    delete_tenure = []
+    for i in delete:
+      delete_name.append(i['manage_name'])
+      delete_tenure.append(i['tenure'])
+
+    for i in delete_name:
+      if i == None:
+        delete_name.remove(i)
+    for i in delete_tenure:
+      if i == None:
+        delete_tenure.remove(i)
