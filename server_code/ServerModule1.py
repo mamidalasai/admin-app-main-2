@@ -45,4 +45,11 @@ def insert_data_to_database(data):
     new_row = your_table.add_row(**data)
 
 @anvil.server.callable
-def manage_product()
+def manage_product(product_id, product_name, membership_type, processing_fee, extension_fee, defaulter_fee, interest_type, max_amount, min_amount, tenure, extensions_allowed, part_payments, fore_closure):
+  app_tables.manage_products.add_row(product_id=product_id,
+                                     product_name=product_name,
+                                     membership_type=membership_type,
+                                     processing_fee=processing_fee,
+                                     extension_fee=extension_fee,
+                                     defaulter_fee=defaulter_fee,
+                                     interest_type=)
