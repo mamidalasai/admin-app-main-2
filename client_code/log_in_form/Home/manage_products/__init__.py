@@ -15,3 +15,20 @@ class manage_products(manage_productsTemplate):
   def link_1_click(self, **event_args):
     """This method is called when the link is clicked"""
     open_form('log_in_form.Home')
+
+  def text_box_1_pressed_enter(self, **event_args):
+    """This method is called when the user presses Enter in this text box"""
+
+  def text_box_2_pressed_enter(self, **event_args):
+    """This method is called when the user presses Enter in this text box"""
+
+  def text_box_3_pressed_enter(self, **event_args):
+    """This method is called when the user presses Enter in this text box"""
+
+  def text_box_4_pressed_enter(self, **event_args):
+    """This method is called when the user presses Enter in this text box"""
+    
+    
+    
+    
+    

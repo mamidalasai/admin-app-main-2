@@ -46,6 +46,7 @@ components:
       background: '', bold: false, underline: false}
     name: text_box_1
     layout_properties: {grid_position: 'MVYBLC,GJMSWO'}
+    event_bindings: {pressed_enter: text_box_1_pressed_enter}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '  Product Name', font_size: null, font: '', spacing_above: small,
@@ -60,6 +61,7 @@ components:
       background: '', bold: false, underline: false}
     name: text_box_2
     layout_properties: {grid_position: 'FCKPNP,ZVPIOC'}
+    event_bindings: {pressed_enter: text_box_2_pressed_enter}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '  Membership type', font_size: null, font: '', spacing_above: small,
@@ -67,48 +69,76 @@ components:
       underline: false, icon: ''}
     name: label_4
     layout_properties: {grid_position: 'VLIJQA,VUQHWQ'}
-  - type: TextBox
-    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: 'Enter
-        your ', border: '', enabled: true, foreground: '', visible: true, text: '',
-      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
-      italic: false, background: '', bold: false, underline: false}
-    name: text_box_3
-    layout_properties: {grid_position: 'VLIJQA,FGFXKO'}
+  - type: DropDown
+    properties:
+      role: outlined
+      align: full
+      tooltip: ''
+      placeholder: Enter your membership type
+      border: ''
+      enabled: true
+      foreground: ''
+      items: [Silver, Gold, Platinum]
+      visible: true
+      font_size: null
+      font: ''
+      spacing_above: small
+      spacing_below: small
+      italic: false
+      background: ''
+      bold: false
+      underline: false
+      include_placeholder: true
+    name: drop_down_4
+    layout_properties: {grid_position: 'VLIJQA,JTZUWS'}
   - type: Label
-    properties: {}
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '  processing Fee', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
     name: label_5
     layout_properties: {grid_position: 'VRHCWD,FNATUT'}
   - type: TextBox
-    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: Enter your processing Fee,
       border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
       font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
       background: '', bold: false, underline: false}
     name: text_box_4
     layout_properties: {grid_position: 'VRHCWD,UCLQTC'}
+    event_bindings: {pressed_enter: text_box_4_pressed_enter}
   - type: Label
-    properties: {}
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '  Extension Fee', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
     name: label_6
     layout_properties: {grid_position: 'HVJGIQ,YEJHYB'}
   - type: TextBox
-    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: Enter your Extension Fee,
       border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
       font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
       background: '', bold: false, underline: false}
     name: text_box_5
     layout_properties: {grid_position: 'HVJGIQ,UWBVQV'}
   - type: Label
-    properties: {}
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '  Defaulter fee', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
     name: label_7
     layout_properties: {grid_position: 'WBAKNY,GKHWRV'}
   - type: TextBox
-    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: '',
-      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
-      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
-      background: '', bold: false, underline: false}
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: '  Enter
+        your Defaulter fee', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
     name: text_box_6
     layout_properties: {grid_position: 'WBAKNY,VTEKGT'}
   - type: Label
-    properties: {}
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '  Interest Type', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
     name: label_8
     layout_properties: {grid_position: 'AGYKBH,GQHSHB'}
   - type: DropDown
@@ -116,11 +146,11 @@ components:
       role: outlined
       align: full
       tooltip: ''
-      placeholder: ''
+      placeholder: '  Enter your Interest Type'
       border: ''
       enabled: true
       foreground: ''
-      items: []
+      items: [Fixed ROI, 'Term based ', EMI]
       visible: true
       font_size: null
       font: ''
@@ -130,44 +160,56 @@ components:
       background: ''
       bold: false
       underline: false
-      include_placeholder: false
+      include_placeholder: true
     name: drop_down_1
     layout_properties: {grid_position: 'AGYKBH,IMETVW'}
   - type: Label
-    properties: {}
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '  Max Amount', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
     name: label_9
     layout_properties: {grid_position: 'AIDYCW,HSEEMZ'}
   - type: TextBox
-    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: '',
-      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
-      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
-      background: '', bold: false, underline: false}
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Max Amount', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
     name: text_box_7
     layout_properties: {grid_position: 'AIDYCW,LJINWJ'}
   - type: Label
-    properties: {}
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '  Min Amount', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
     name: label_10
     layout_properties: {grid_position: 'EPXLLY,NJLJHU'}
   - type: TextBox
-    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: Enter your Min Amount,
       border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
       font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
       background: '', bold: false, underline: false}
     name: text_box_8
     layout_properties: {grid_position: 'EPXLLY,DCQEBI'}
   - type: Label
-    properties: {}
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '  Tenure', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
     name: label_11
     layout_properties: {grid_position: 'LUVIWU,LWLIHE'}
   - type: TextBox
-    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: Enter your Tenure,
       border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
       font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
       background: '', bold: false, underline: false}
     name: text_box_9
     layout_properties: {grid_position: 'LUVIWU,UHVRPS'}
   - type: Label
-    properties: {}
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '  Extensions allowed', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
     name: label_12
     layout_properties: {grid_position: 'MKUMRC,JATYIT'}
   - type: DropDown
@@ -175,11 +217,11 @@ components:
       role: outlined
       align: full
       tooltip: ''
-      placeholder: ''
+      placeholder: 'Enter your Extensions '
       border: ''
       enabled: true
       foreground: ''
-      items: []
+      items: ['Yes ', 'No']
       visible: true
       font_size: null
       font: ''
@@ -189,11 +231,14 @@ components:
       background: ''
       bold: false
       underline: false
-      include_placeholder: false
+      include_placeholder: true
     name: drop_down_2
     layout_properties: {grid_position: 'MKUMRC,RNDHAD'}
   - type: Label
-    properties: {}
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '  Part payments ', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
     name: label_13
     layout_properties: {grid_position: 'QXAVQC,RSMAJE'}
   - type: DropDown
@@ -201,11 +246,11 @@ components:
       role: outlined
       align: full
       tooltip: ''
-      placeholder: ''
+      placeholder: ' Enter your Part payments '
       border: ''
       enabled: true
       foreground: ''
-      items: []
+      items: ['Yes ', 'No']
       visible: true
       font_size: null
       font: ''
@@ -215,20 +260,31 @@ components:
       background: ''
       bold: false
       underline: false
-      include_placeholder: false
+      include_placeholder: true
     name: drop_down_3
     layout_properties: {grid_position: 'QXAVQC,QPXZHI'}
   - type: Label
-    properties: {}
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '  Foreclosure', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
     name: label_14
     layout_properties: {grid_position: 'UHZWPH,AUZYCZ'}
   - type: TextBox
-    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: '',
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: Enter your Foreclosure,
       border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
       font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
       background: '', bold: false, underline: false}
     name: text_box_10
     layout_properties: {grid_position: 'UHZWPH,ZQDMLN'}
+  - type: Button
+    properties: {role: outlined-button, align: center, tooltip: '', border: '', enabled: true,
+      foreground: Black, visible: true, text: SUBMIT, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
+      bold: false, underline: false, icon: ''}
+    name: button_1
+    layout_properties: {grid_position: 'GQBBMA,DGGYLK'}
+    event_bindings: {click: button_1_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links
