@@ -44,6 +44,11 @@ class manage_products(manage_productsTemplate):
     part_payments = self.drop_down_3.selected_value
     fore_closure = self.text_box_10.text
 
+    if product_id == "" or product_name == "" or membership_type == "" or processing_fee == "" or extension_fee == "" or defaulter_fee == "" or interest_type == "" or max_amount == "" or min_amount == "" or tenure == "" or extensions_allowed == "" or part_payments == "" or fore_closure == "":
+      Notification("Fill All Required Details").show()
+    else:
+      anvil.server.call('manage_product', product_id, product_name, membership_type, processing_fee, extension_fee, defaulter_fee, interest_type, max_amount, min_amount, tenure, extensions_allowed, part_payments, fore_closure)
+      alert("Submitted Successfully")
     
     
     

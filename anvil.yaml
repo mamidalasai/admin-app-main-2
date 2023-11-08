@@ -99,7 +99,7 @@ db_schema:
       type: string
     title: manage_settings
   manage_products:
-    client: none
+    client: full
     server: full
     columns:
     - name: product_id
