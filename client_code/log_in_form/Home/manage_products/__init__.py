@@ -44,25 +44,6 @@ class manage_products(manage_productsTemplate):
     part_payments = self.drop_down_3.selected_value
     fore_closure = self.text_box_10.text
 
-    if product_id == "" and product_name == '' and membership_type == '' and processing_fee == '' and extension_fee == '' and defaulter_fee == '' and interest_type == '' and max_amount == '' and min_amount == '' and tenure == '' and extensions_allowed == '' and part_payments == '' and fore_closure == '':
-      Notification("Fill requires Details").show()
-    else:
-      data = self.collect_data_from_form()
-      anvil.server.call('insert_data_to_database', data)
-      self.text_box_1.text = self.text_box_1.focus()
-      self.text_box_2.text = self.text_box_2.focus()
-      self.text_box_4.text = self.text_box_4.focus()
-      self.text_box_5.text = self.text_box_5.focus()
-      self.text_box_6.text = self.text_box_6.focus()
-      self.text_box_7.text = self.text_box_7.focus()
-      self.text_box_8.text = self.text_box_8.focus()
-      self.text_box_9.text = self.text_box_9.focus()
-      self.text_box_10.text = self.text_box_10.focus()
-      self.drop_down_1.selected_value = self.drop_down_2.selected_value.focus()
-      self.drop_down_2.selected_value = self.drop_down_2.selected_value.focus()
-      self.drop_down_3.selected_value = self.drop_down_3.selected_value.focus()
-      self.drop_down_4.selected_value = self.drop_down_4.selected_value.focus()
-
     
     
     
