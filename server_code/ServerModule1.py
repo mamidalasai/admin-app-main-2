@@ -36,3 +36,10 @@ def settings(manage_name, tenure, processing_fee, extension_fee, default_fee, no
                                      amount_disbursed=amount_disbursed
                                     )
 
+
+
+@anvil.server.callable
+def insert_data_to_database(data):
+    # Replace 'your_table_name' with the actual name of your database table
+    your_table = app_tables.manage_settings
+    new_row = your_table.add_row(**data)
