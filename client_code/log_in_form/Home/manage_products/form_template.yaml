@@ -25,10 +25,210 @@ components:
     name: link_1
     layout_properties: {grid_position: 'YQMXBN,OJZXOP'}
     event_bindings: {click: link_1_click}
-  - name: image_2
+  - type: Label
+    properties: {role: null, align: center, tooltip: '', border: '', foreground: '',
+      visible: true, text: Manage Products, font_size: 15, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: true,
+      underline: false, icon: ''}
+    name: label_1
+    layout_properties: {grid_position: 'MQWYBL,WYWFTZ'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '  Product ID', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_2
+    layout_properties: {grid_position: 'MVYBLC,XAZHTB'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: Enter your product id,
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_1
+    layout_properties: {grid_position: 'MVYBLC,GJMSWO'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '  Product Name', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_3
+    layout_properties: {grid_position: 'FCKPNP,WXFNNG'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: Enter your Product Name,
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_2
+    layout_properties: {grid_position: 'FCKPNP,ZVPIOC'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '  Membership type', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_4
+    layout_properties: {grid_position: 'VLIJQA,VUQHWQ'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: 'Enter
+        your ', border: '', enabled: true, foreground: '', visible: true, text: '',
+      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_3
+    layout_properties: {grid_position: 'VLIJQA,FGFXKO'}
+  - type: Label
     properties: {}
-    type: Image
-    layout_properties: {grid_position: 'ZUXRCA,SCHEIQ'}
+    name: label_5
+    layout_properties: {grid_position: 'VRHCWD,FNATUT'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_4
+    layout_properties: {grid_position: 'VRHCWD,UCLQTC'}
+  - type: Label
+    properties: {}
+    name: label_6
+    layout_properties: {grid_position: 'HVJGIQ,YEJHYB'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_5
+    layout_properties: {grid_position: 'HVJGIQ,UWBVQV'}
+  - type: Label
+    properties: {}
+    name: label_7
+    layout_properties: {grid_position: 'WBAKNY,GKHWRV'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_6
+    layout_properties: {grid_position: 'WBAKNY,VTEKGT'}
+  - type: Label
+    properties: {}
+    name: label_8
+    layout_properties: {grid_position: 'AGYKBH,GQHSHB'}
+  - type: DropDown
+    properties:
+      role: outlined
+      align: full
+      tooltip: ''
+      placeholder: ''
+      border: ''
+      enabled: true
+      foreground: ''
+      items: []
+      visible: true
+      font_size: null
+      font: ''
+      spacing_above: small
+      spacing_below: small
+      italic: false
+      background: ''
+      bold: false
+      underline: false
+      include_placeholder: false
+    name: drop_down_1
+    layout_properties: {grid_position: 'AGYKBH,IMETVW'}
+  - type: Label
+    properties: {}
+    name: label_9
+    layout_properties: {grid_position: 'AIDYCW,HSEEMZ'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_7
+    layout_properties: {grid_position: 'AIDYCW,LJINWJ'}
+  - type: Label
+    properties: {}
+    name: label_10
+    layout_properties: {grid_position: 'EPXLLY,NJLJHU'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_8
+    layout_properties: {grid_position: 'EPXLLY,DCQEBI'}
+  - type: Label
+    properties: {}
+    name: label_11
+    layout_properties: {grid_position: 'LUVIWU,LWLIHE'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_9
+    layout_properties: {grid_position: 'LUVIWU,UHVRPS'}
+  - type: Label
+    properties: {}
+    name: label_12
+    layout_properties: {grid_position: 'MKUMRC,JATYIT'}
+  - type: DropDown
+    properties:
+      role: outlined
+      align: full
+      tooltip: ''
+      placeholder: ''
+      border: ''
+      enabled: true
+      foreground: ''
+      items: []
+      visible: true
+      font_size: null
+      font: ''
+      spacing_above: small
+      spacing_below: small
+      italic: false
+      background: ''
+      bold: false
+      underline: false
+      include_placeholder: false
+    name: drop_down_2
+    layout_properties: {grid_position: 'MKUMRC,RNDHAD'}
+  - type: Label
+    properties: {}
+    name: label_13
+    layout_properties: {grid_position: 'QXAVQC,RSMAJE'}
+  - type: DropDown
+    properties:
+      role: outlined
+      align: full
+      tooltip: ''
+      placeholder: ''
+      border: ''
+      enabled: true
+      foreground: ''
+      items: []
+      visible: true
+      font_size: null
+      font: ''
+      spacing_above: small
+      spacing_below: small
+      italic: false
+      background: ''
+      bold: false
+      underline: false
+      include_placeholder: false
+    name: drop_down_3
+    layout_properties: {grid_position: 'QXAVQC,QPXZHI'}
+  - type: Label
+    properties: {}
+    name: label_14
+    layout_properties: {grid_position: 'UHZWPH,AUZYCZ'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: '',
+      border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+      font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+      background: '', bold: false, underline: false}
+    name: text_box_10
+    layout_properties: {grid_position: 'UHZWPH,ZQDMLN'}
 - type: FlowPanel
   properties: {}
   name: navbar_links
