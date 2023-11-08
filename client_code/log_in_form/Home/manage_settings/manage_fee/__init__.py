@@ -6,12 +6,7 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 
 
-def add_data_to_database(processing_fee, extension_fee, default_fee):
-    # Replace 'your_table_name' with the actual name of your database table
-    your_table = app_tables.manage_settings
-    # Add a new row to the database table
-    new_row = your_table.add_row(processing_fee=processing_fee, extension_fee=extension_fee, default_fee=default_fee)
-    
+
 
 
 class manage_fee(manage_feeTemplate):
@@ -24,6 +19,14 @@ class manage_fee(manage_feeTemplate):
   def link_1_click(self, **event_args):
     """This method is called when the link is clicked"""
     open_form('log_in_form.Home.manage_settings')
+  def collect_data_from_form(self):
+      data = {
+          'processing_fee': self.text_box_1.text,
+          'extension_fee': self.text_box_2.text,
+          'default_fee': self.text_box_3.text
+          # Add more fields as needed
+      }
+      return data
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
@@ -32,9 +35,10 @@ class manage_fee(manage_feeTemplate):
     default_fee = self.text_box_3.text
 
     if processing_fee == "" or extension_fee == "" or default_fee == "":
-      Notification("Fill requires Details")
+      Notification("Fill requires Details").show()
     else:
-      add_data_to_database(processing_fee, extension_fee, default_fee)
+      data = self.collect_data_from_form()
+      anvil.server.call('insert_data_to_database', data)
       self.text_box_1.text = self.text_box_1.focus()
       self.text_box_2.text = self.text_box_2.focus()
       self.text_box_3.text = self.text_box_3.focus()

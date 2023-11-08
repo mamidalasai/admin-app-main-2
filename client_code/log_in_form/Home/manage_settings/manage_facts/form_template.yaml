@@ -70,7 +70,7 @@ components:
     layout_properties: {grid_position: 'AIIKES,DLEJTM'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: 'Amount Disbursed:', font_size: 20, font: '', spacing_above: small,
+      visible: true, text: 'Lenders Commitment:', font_size: 20, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: label_4
@@ -84,7 +84,7 @@ components:
     layout_properties: {grid_position: 'GUCDAK,XUBGWN'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: ' Lenders Commitment:', font_size: 20, font: '', spacing_above: small,
+      visible: true, text: ' Amount Disbursed:', font_size: 20, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: label_5
@@ -111,6 +111,7 @@ components:
       bold: false, underline: false, icon: ''}
     name: button_2
     layout_properties: {grid_position: 'GIHPTF,VEKZQD'}
+    event_bindings: {click: button_2_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links
