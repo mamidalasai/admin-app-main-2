@@ -4,7 +4,7 @@ services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: log_in_form.Home.manage_settings}
+startup: {type: form, module: log_in_form.Home.manage_products}
 package_name: Admin_app
 allow_embedding: false
 name: admin-app-main
@@ -98,4 +98,12 @@ db_schema:
       admin_ui: {width: 200, order: 8}
       type: string
     title: manage_settings
+  manage_products:
+    client: none
+    server: full
+    columns:
+    - name: product_id
+      admin_ui: {width: 200, order: 0}
+      type: string
+    title: manage_products
 renamed: true
