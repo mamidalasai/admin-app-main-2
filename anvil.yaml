@@ -105,5 +105,41 @@ db_schema:
     - name: product_id
       admin_ui: {width: 200, order: 0}
       type: string
+    - name: product_name
+      admin_ui: {width: 200, order: 1}
+      type: string
+    - name: membership_type
+      admin_ui: {width: 200, order: 2}
+      type: string
+    - name: processing_fee
+      admin_ui: {width: 200, order: 3}
+      type: string
+    - name: extension_fee
+      admin_ui: {width: 200, order: 4}
+      type: string
+    - name: defaulter_fee
+      admin_ui: {width: 200, order: 5}
+      type: string
+    - name: interest_type
+      admin_ui: {width: 200, order: 6}
+      type: string
+    - name: max_amount
+      admin_ui: {width: 200, order: 7}
+      type: string
+    - name: min_amount
+      admin_ui: {width: 200, order: 8}
+      type: string
+    - name: tenure
+      admin_ui: {width: 200, order: 9}
+      type: string
+    - name: extensions_allowed
+      admin_ui: {width: 200, order: 10}
+      type: string
+    - name: part_payments
+      admin_ui: {width: 200, order: 11}
+      type: string
+    - name: fore_closure
+      admin_ui: {width: 200, order: 12}
+      type: string
     title: manage_products
 renamed: true
