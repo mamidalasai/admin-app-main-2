@@ -4,7 +4,7 @@ services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: log_in_form}
+startup: {type: form, module: log_in_form.Form4}
 package_name: Admin_app
 allow_embedding: false
 name: admin-app-main
@@ -170,11 +170,11 @@ db_schema:
     - name: min_amount
       admin_ui: {width: 200, order: 7}
       type: number
-    - name: 'tenure '
-      admin_ui: {width: 200, order: 8}
+    - name: tenure
+      admin_ui: {order: 8, width: 200}
       type: number
-    - name: 'total_repayment '
-      admin_ui: {width: 200, order: 9}
+    - name: total_repayment
+      admin_ui: {order: 9, width: 200}
       type: number
     title: loan_details
 renamed: true

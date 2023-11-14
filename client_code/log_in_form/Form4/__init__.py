@@ -36,14 +36,18 @@ class Form4(Form4Template):
       self.total_repayment.append(row['total_repayment'])
       
     
-    self.label_3.text = self.user_id[-1]
-    self.label_5.text = self.name[-1]
-    self.label_7.text = self.password[-1]
-    self.label_9.text = self.mobile_no[-1]
-    self.label_11.text = self.mail_id[-1]
-    self.label_13.text = self.pincode[-1]
-    self.label_3.text = self.user_id[-1]
-    self.label_3.text = self.user_id[-1]
-    self.label_3.text = self.user_id[-1]
-    self.label_3.text = self.user_id[-1]
-    print(self.pincode)
+    self.label_11.text = self.customer_id[-1]
+    self.label_12.text = self.email_id[-1]
+    self.label_13.text = self.full_name[-1]
+    self.label_14.text = self.interest_rate[-1]
+    self.label_15.text = self.loan_id[-1]
+    self.label_16.text = self.loan_status[-1]
+    self.label_17.text = self.max_amount[-1]
+    self.label_18.text = self.min_amount[-1]
+    self.label_19.text = self.tenure[-1]
+    self.label_20.text = self.total_repayment[-1]
+    print(self.total_repayment)
+
+  def button_3_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    
