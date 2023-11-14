@@ -3,6 +3,10 @@ container:
   type: HtmlTemplate
   properties: {html: '@theme:standard-page.html'}
 components:
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}
 - type: ColumnPanel
   properties: {col_widths: '{}'}
   name: content_panel
@@ -35,6 +39,13 @@ components:
       underline: false, icon: ''}
     name: label_1
     layout_properties: {grid_position: 'DKVFGO,OSCEES'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Coustmer_id', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_1
+    layout_properties: {grid_position: 'DKVFGO,VRVOTP'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   Full_name', font_size: null, font: '', spacing_above: small,
@@ -42,6 +53,13 @@ components:
       underline: false, icon: ''}
     name: label_2
     layout_properties: {grid_position: 'NIPFIX,JTFJZJ'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Full_name', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_2
+    layout_properties: {grid_position: 'NIPFIX,FZOCGJ'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   Profile_status', font_size: null, font: '', spacing_above: small,
@@ -49,6 +67,13 @@ components:
       underline: false, icon: ''}
     name: label_4
     layout_properties: {grid_position: 'VTWFJD,MKMAIQ'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Profile_status', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_3
+    layout_properties: {grid_position: 'VTWFJD,ROIICC'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   Gender', font_size: null, font: '', spacing_above: small,
@@ -56,6 +81,13 @@ components:
       underline: false, icon: ''}
     name: label_5
     layout_properties: {grid_position: 'CZVPKW,QNIOJE'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Gender', border: '', enabled: true, foreground: '', visible: true, text: '',
+      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_4
+    layout_properties: {grid_position: 'CZVPKW,SFQQVY'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   User_age', font_size: null, font: '', spacing_above: small,
@@ -63,6 +95,13 @@ components:
       underline: false, icon: ''}
     name: label_6
     layout_properties: {grid_position: 'ZAJWTQ,WHYGAU'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your User_age', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_5
+    layout_properties: {grid_position: 'ZAJWTQ,POTVHB'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   Date_of_birth', font_size: null, font: '', spacing_above: small,
@@ -70,6 +109,13 @@ components:
       underline: false, icon: ''}
     name: label_7
     layout_properties: {grid_position: 'XYRBYE,UUKZNN'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Date_of_birth', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_6
+    layout_properties: {grid_position: 'XYRBYE,YBPIKZ'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   Mobile', font_size: null, font: '', spacing_above: small,
@@ -77,6 +123,13 @@ components:
       underline: false, icon: ''}
     name: label_10
     layout_properties: {grid_position: 'WRMXXR,CECKYD'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Mobile', border: '', enabled: true, foreground: '', visible: true, text: '',
+      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_7
+    layout_properties: {grid_position: 'WRMXXR,KSAASJ'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   Aadhaar_no', font_size: null, font: '', spacing_above: small,
@@ -84,6 +137,13 @@ components:
       underline: false, icon: ''}
     name: label_11
     layout_properties: {grid_position: 'YYNPJW,HIQUXW'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Aadhaar_no', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_8
+    layout_properties: {grid_position: 'YYNPJW,NVYNCI'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   Pan_number', font_size: null, font: '', spacing_above: small,
@@ -91,6 +151,13 @@ components:
       underline: false, icon: ''}
     name: label_12
     layout_properties: {grid_position: 'MTOWKY,JAKZAK'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Pan_number', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_9
+    layout_properties: {grid_position: 'MTOWKY,RWAMKS'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   City', font_size: null, font: '', spacing_above: small,
@@ -98,6 +165,13 @@ components:
       underline: false, icon: ''}
     name: label_13
     layout_properties: {grid_position: 'ZYHUOQ,HNICTJ'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your City', border: '', enabled: true, foreground: '', visible: true, text: '',
+      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_10
+    layout_properties: {grid_position: 'ZYHUOQ,GOMKHS'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   Email_user', font_size: null, font: '', spacing_above: small,
@@ -105,6 +179,13 @@ components:
       underline: false, icon: ''}
     name: label_14
     layout_properties: {grid_position: 'FPDBDX,ILRLGG'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Email_user', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_11
+    layout_properties: {grid_position: 'FPDBDX,GYNPTI'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   Last_confirm', font_size: null, font: '', spacing_above: small,
@@ -112,6 +193,13 @@ components:
       underline: false, icon: ''}
     name: label_15
     layout_properties: {grid_position: 'OMLKBI,UOBWOQ'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Last_confirm', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_12
+    layout_properties: {grid_position: 'OMLKBI,MMJRQU'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   Mobile_check', font_size: null, font: '', spacing_above: small,
@@ -119,6 +207,13 @@ components:
       underline: false, icon: ''}
     name: label_16
     layout_properties: {grid_position: 'TQQWKM,DTQDMF'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Mobile_check', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_13
+    layout_properties: {grid_position: 'TQQWKM,SIREXD'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   Mouther_tounge', font_size: null, font: '', spacing_above: small,
@@ -126,6 +221,13 @@ components:
       underline: false, icon: ''}
     name: label_17
     layout_properties: {grid_position: 'XHKJQK,HFMQNI'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Mouther_tounge', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_14
+    layout_properties: {grid_position: 'XHKJQK,YEILQG'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   Marital_status', font_size: null, font: '', spacing_above: small,
@@ -133,6 +235,13 @@ components:
       underline: false, icon: ''}
     name: label_18
     layout_properties: {grid_position: 'XHOVUK,OJNSCB'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Marital_status', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_15
+    layout_properties: {grid_position: 'XHOVUK,SYXTUK'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   Date_mariage', font_size: null, font: '', spacing_above: small,
@@ -140,6 +249,13 @@ components:
       underline: false, icon: ''}
     name: label_19
     layout_properties: {grid_position: 'CTMPIU,WJYMVC'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Date_mariage', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_16
+    layout_properties: {grid_position: 'CTMPIU,HFXYUX'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   Spouse_name', font_size: null, font: '', spacing_above: small,
@@ -147,6 +263,13 @@ components:
       underline: false, icon: ''}
     name: label_20
     layout_properties: {grid_position: 'ZUCPPN,WQPVFD'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Spouse_name', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_17
+    layout_properties: {grid_position: 'ZUCPPN,FSKFRP'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   Spouse_mobile', font_size: null, font: '', spacing_above: small,
@@ -154,6 +277,13 @@ components:
       underline: false, icon: ''}
     name: label_21
     layout_properties: {grid_position: 'KVCXTH,RLXQNP'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Spouse_mobile', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_18
+    layout_properties: {grid_position: 'KVCXTH,QFWYXX'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   Spouse_company_name', font_size: null, font: '', spacing_above: small,
@@ -161,6 +291,13 @@ components:
       underline: false, icon: ''}
     name: label_22
     layout_properties: {grid_position: 'USBKDY,OPWYYD'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Spouse_company_name', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_19
+    layout_properties: {grid_position: 'USBKDY,YEILFE'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   Spouse_company_address', font_size: null, font: '',
@@ -168,6 +305,13 @@ components:
       background: '', bold: false, underline: false, icon: ''}
     name: label_23
     layout_properties: {grid_position: 'EMHPBR,MWQBBQ'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Spouse_company_address', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_20
+    layout_properties: {grid_position: 'EMHPBR,PCARZL'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   Spouse_profficen', font_size: null, font: '', spacing_above: small,
@@ -175,6 +319,13 @@ components:
       underline: false, icon: ''}
     name: label_24
     layout_properties: {grid_position: 'SOUZVU,VPLYJD'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Spouse_profficen', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_21
+    layout_properties: {grid_position: 'SOUZVU,ZYRFWQ'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   Usertype', font_size: null, font: '', spacing_above: small,
@@ -182,6 +333,13 @@ components:
       underline: false, icon: ''}
     name: label_25
     layout_properties: {grid_position: 'AQQQDL,OWRJSF'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Usertype', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_22
+    layout_properties: {grid_position: 'AQQQDL,CLRBYA'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   Registration_approve', font_size: null, font: '', spacing_above: small,
@@ -189,6 +347,13 @@ components:
       underline: false, icon: ''}
     name: label_26
     layout_properties: {grid_position: 'JWBCUK,YPERHR'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Registration_approve', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_23
+    layout_properties: {grid_position: 'JWBCUK,IOJSUC'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   About', font_size: null, font: '', spacing_above: small,
@@ -196,6 +361,13 @@ components:
       underline: false, icon: ''}
     name: label_27
     layout_properties: {grid_position: 'GOFZWD,CNSFMI'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your About', border: '', enabled: true, foreground: '', visible: true, text: '',
+      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_24
+    layout_properties: {grid_position: 'GOFZWD,JJIFSI'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   Address_type', font_size: null, font: '', spacing_above: small,
@@ -203,6 +375,13 @@ components:
       underline: false, icon: ''}
     name: label_28
     layout_properties: {grid_position: 'CKIDPI,POGUQQ'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Address_type', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_25
+    layout_properties: {grid_position: 'CKIDPI,AYXEGF'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   Alerts', font_size: null, font: '', spacing_above: small,
@@ -210,6 +389,13 @@ components:
       underline: false, icon: ''}
     name: label_29
     layout_properties: {grid_position: 'UGXTAU,WFUKFJ'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Alerts', border: '', enabled: true, foreground: '', visible: true, text: '',
+      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_26
+    layout_properties: {grid_position: 'UGXTAU,LRONTR'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   Building_name', font_size: null, font: '', spacing_above: small,
@@ -217,6 +403,13 @@ components:
       underline: false, icon: ''}
     name: label_30
     layout_properties: {grid_position: 'EWOTIQ,TSGZMX'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Building_name', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_27
+    layout_properties: {grid_position: 'EWOTIQ,CFKUVV'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   House_landmark', font_size: null, font: '', spacing_above: small,
@@ -224,6 +417,13 @@ components:
       underline: false, icon: ''}
     name: label_31
     layout_properties: {grid_position: 'FADSPA,OOTPDE'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your House_landmark', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_28
+    layout_properties: {grid_position: 'FADSPA,QBTDAW'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   House_no', font_size: null, font: '', spacing_above: small,
@@ -231,6 +431,13 @@ components:
       underline: false, icon: ''}
     name: label_32
     layout_properties: {grid_position: 'MNIPOR,NAWEXO'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your House_no', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_29
+    layout_properties: {grid_position: 'MNIPOR,IESYAS'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   Mail_id', font_size: null, font: '', spacing_above: small,
@@ -238,6 +445,13 @@ components:
       underline: false, icon: ''}
     name: label_33
     layout_properties: {grid_position: 'CHCJJJ,JXWOIT'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Mail_id', border: '', enabled: true, foreground: '', visible: true, text: '',
+      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_31
+    layout_properties: {grid_position: 'CHCJJJ,AUNYBE'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   Pincode', font_size: null, font: '', spacing_above: small,
@@ -245,6 +459,13 @@ components:
       underline: false, icon: ''}
     name: label_34
     layout_properties: {grid_position: 'IRTSDX,OOLCJV'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Pincode', border: '', enabled: true, foreground: '', visible: true, text: '',
+      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_30
+    layout_properties: {grid_position: 'IRTSDX,NMIPJP'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   Qualification', font_size: null, font: '', spacing_above: small,
@@ -252,6 +473,13 @@ components:
       underline: false, icon: ''}
     name: label_35
     layout_properties: {grid_position: 'AHCIGS,NCKJVO'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Qualification', border: '', enabled: true, foreground: '', visible: true,
+      text: '', font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_32
+    layout_properties: {grid_position: 'AHCIGS,OCKZRS'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   State', font_size: null, font: '', spacing_above: small,
@@ -259,6 +487,13 @@ components:
       underline: false, icon: ''}
     name: label_36
     layout_properties: {grid_position: 'CMRUXG,MZJNFQ'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your State ', border: '', enabled: true, foreground: '', visible: true, text: '',
+      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_33
+    layout_properties: {grid_position: 'CMRUXG,GBGRHK'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   Street', font_size: null, font: '', spacing_above: small,
@@ -266,6 +501,13 @@ components:
       underline: false, icon: ''}
     name: label_37
     layout_properties: {grid_position: 'NRLORM,WMIIKJ'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Street', border: '', enabled: true, foreground: '', visible: true, text: '',
+      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_34
+    layout_properties: {grid_position: 'NRLORM,HKHAXC'}
   - type: Label
     properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
       visible: true, text: '   Terms', font_size: null, font: '', spacing_above: small,
@@ -273,46 +515,14 @@ components:
       underline: false, icon: ''}
     name: label_38
     layout_properties: {grid_position: 'SGEGID,GAAZZZ'}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: '   User_photo', font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_3
-    layout_properties: {grid_position: 'WMGTXY,EEUDBU'}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: '   Aadhaar_photo', font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_8
-    layout_properties: {grid_position: 'TYNIDC,KHYXIF'}
-  - type: Label
-    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-      visible: true, text: '   Pan_photo', font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-      underline: false, icon: ''}
-    name: label_9
-    layout_properties: {grid_position: 'LIYZUY,IVIJII'}
+  - type: TextBox
+    properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: ' Enter
+        your Terms', border: '', enabled: true, foreground: '', visible: true, text: '',
+      font_size: null, font: '', spacing_above: small, type: text, spacing_below: small,
+      italic: false, background: '', bold: false, underline: false}
+    name: text_box_35
+    layout_properties: {grid_position: 'SGEGID,NSKGAT'}
   - type: Label
     properties: {}
     name: label_42
     layout_properties: {grid_position: 'ZVNTPR,VKKIFF'}
-  - type: Button
-    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-      foreground: black, visible: true, text: Edit, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
-      bold: false, underline: false, icon: ''}
-    name: button_2
-    layout_properties: {grid_position: 'TSKUXZ,EFCTTQ'}
-  - type: Button
-    properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
-      foreground: black, visible: true, text: Back, font_size: null, font: '', spacing_above: small,
-      icon_align: left, spacing_below: small, italic: false, background: '#0876E8',
-      bold: false, underline: false, icon: ''}
-    name: button_3
-    layout_properties: {grid_position: 'TSKUXZ,ODHLUP'}
-- type: FlowPanel
-  properties: {}
-  name: navbar_links
-  layout_properties: {slot: nav-right}
