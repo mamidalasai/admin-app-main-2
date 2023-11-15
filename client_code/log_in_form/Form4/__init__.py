@@ -48,8 +48,13 @@ class Form4(Form4Template):
     self.label_20.text = self.total_repayment[-1]
     print(self.total_repayment)
 
-    loan_status = "Approved";
-    if loan_status = "Approved":
+    self.loan_status = 'Approved';
+    if self.loan_status == "approved":
+      
+      
+      
+      
+      
 
   def button_3_click(self, **event_args):
     """This method is called when the button is clicked"""
