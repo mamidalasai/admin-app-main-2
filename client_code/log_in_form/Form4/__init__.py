@@ -48,9 +48,18 @@ class Form4(Form4Template):
     self.label_20.text = self.total_repayment[-1]
     print(self.total_repayment)
 
-    self.loan_status = 'Approved';
-    if self.loan_status == "approved":
-      
+    loan_status = 'Approved';
+    if loan_status == "approved":
+      customer_id= []
+      email_id = []
+      full_name = []
+    data = tables.app_tables.loan_details.search()
+    for row in data:
+       customer_id.append(row['customer_id'])
+      email_id.append(row['email_id'])
+
+  
+    
       
       
       
