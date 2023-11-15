@@ -9,7 +9,8 @@ class Form4(Form4Template):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
-
+    
+  
     # Any code you write here will run before the form opens.
     self.customer_id= []
     self.email_id = []
@@ -36,18 +37,20 @@ class Form4(Form4Template):
       self.total_repayment.append(row['total_repayment'])
       
     
-    self.label_11.text = self.customer_id[-1]
-    self.label_12.text = self.email_id[-1]
-    self.label_13.text = self.full_name[-1]
-    self.label_14.text = self.interest_rate[-1]
-    self.label_15.text = self.loan_id[-1]
-    self.label_16.text = self.loan_status[-1]
-    self.label_17.text = self.max_amount[-1]
-    self.label_18.text = self.min_amount[-1]
-    self.label_19.text = self.tenure[-1]
-    self.label_20.text = self.total_repayment[-1]
-    print(self.total_repayment)
+      self.label_11.text = self.customer_id[-1]
+      self.label_12.text = self.email_id[-1]
+      self.label_13.text = self.full_name[-1]
+      self.label_14.text = self.interest_rate[-1]
+      self.label_15.text = self.loan_id[-1]
+      self.label_16.text = self.loan_status[-1]
+      self.label_17.text = self.max_amount[-1]
+      self.label_18.text = self.min_amount[-1]
+      self.label_19.text = self.tenure[-1]
+      self.label_20.text = self.total_repayment[-1]
+      print(self.total_repayment)
 
-  def button_3_click(self, **event_args):
-    """This method is called when the button is clicked"""
-    
+    self.customer_id = self.label_11.text
+    self.email_id = self.label_12.text
+    for i in self.loan_status:
+      if i :
+        anvil.server.call('lender',self.customer_id,self.email_id)

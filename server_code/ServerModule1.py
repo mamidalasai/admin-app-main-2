@@ -60,3 +60,9 @@ def manage_product(product_id, product_name, membership_type, processing_fee, ex
                                      part_payments = part_payments,
                                      fore_closure = fore_closure
                                     )
+
+@anvil.server.callable
+def lender(customer_id, email_id):
+  app_tables.lender.add_row(customer_id=customer_id,
+                            email_id=email_id
+                           )
