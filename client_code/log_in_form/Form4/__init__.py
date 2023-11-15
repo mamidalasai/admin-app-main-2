@@ -49,28 +49,8 @@ class Form4(Form4Template):
       self.label_20.text = self.total_repayment[-1]
       print(self.total_repayment)
 
-    loan_status = 'True';
-    if loan_status == "True":
-      print("The details in lender form")
-      def copy_data_to_lender(self, customer_id,email_id):
-        # Get the row from the source table
-          source_row = app_tables.loan_details.get(customer_id=customer_id)
-          source_row = app_tables.loan_details.get(email_id=email_id)
-        
-        # Create a new row in the destination table and copy data
-          new_destination_row = app_tables.lender.add_row(
-            customer_id=source_row['customer_id'],
-            email_id=source_row['email_id'],
-            # Add more columns as needed
-        )
-        
-        # Optionally, you can delete the row from the source table
-          source_row.delete()
-        
-        # You can also update the UI or perform other actions if needed
-          new_destination_rows = "Data copied successfully!"
-
-
-    
-
-    
+    self.customer_id = self.label_11.text
+    self.email_id = self.label_12.text
+    for i in self.loan_status:
+      if i :
+        anvil.server.call('lender',self.customer_id,self.email_id)
