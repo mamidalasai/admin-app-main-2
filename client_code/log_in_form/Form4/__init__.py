@@ -50,21 +50,8 @@ class Form4(Form4Template):
 
     loan_status = 'Approved';
     if loan_status == "approved":
-      customer_id= []
-      email_id = []
-      full_name = []
-    data = tables.app_tables.loan_details.search()
-    for row in data:
-       customer_id.append(row['customer_id'])
-      email_id.append(row['email_id'])
+      print("The details in lender form")
 
-  
     
-      
-      
-      
-      
 
-  def button_3_click(self, **event_args):
-    """This method is called when the button is clicked"""
     
