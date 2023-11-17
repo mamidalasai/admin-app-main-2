@@ -137,6 +137,7 @@ class view_profile(view_profileTemplate):
 
   def button_3_click(self, **event_args):
     """This method is called when the button is clicked"""
+    customer_id_value = self.label_3.text
     open_form('admin.dashboard.view_profile.update_form', customer_id_value)
 
   def button_1_click(self, **event_args):
