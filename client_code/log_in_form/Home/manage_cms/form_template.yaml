@@ -444,9 +444,148 @@ components:
     name: label_72
     layout_properties: {grid_position: 'SGEGID,XVGSEP'}
   - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '   another email', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_73
+    layout_properties: {grid_position: 'PMRNHE,VJZABE'}
+  - type: Label
     properties: {}
+    name: label_74
+    layout_properties: {grid_position: 'PMRNHE,RMKIAZ'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '   company name', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_75
+    layout_properties: {grid_position: 'WJJMGO,COLGRZ'}
+  - type: Label
+    properties: {}
+    name: label_76
+    layout_properties: {grid_position: 'WJJMGO,DEKTHS'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '   organization type', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
     name: label_42
     layout_properties: {grid_position: 'ZVNTPR,VKKIFF'}
+  - type: Label
+    properties: {}
+    name: label_77
+    layout_properties: {grid_position: 'ZVNTPR,WIXTWO'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '   employment type', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_78
+    layout_properties: {grid_position: 'PHROOT,EYUNBN'}
+  - type: Label
+    properties: {}
+    name: label_79
+    layout_properties: {grid_position: 'PHROOT,RDTJCX'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '   business no', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_80
+    layout_properties: {grid_position: 'RPLXHY,FWOAMI'}
+  - type: Label
+    properties: {}
+    name: label_81
+    layout_properties: {grid_position: 'RPLXHY,TAKJHO'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '   company landmark', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_82
+    layout_properties: {grid_position: 'JEJYUK,IUHGIE'}
+  - type: Label
+    properties: {}
+    name: label_83
+    layout_properties: {grid_position: 'JEJYUK,ENFTXM'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '   company address', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_84
+    layout_properties: {grid_position: 'JSWXIZ,JZPSES'}
+  - type: Label
+    properties: {}
+    name: label_85
+    layout_properties: {grid_position: 'JSWXIZ,OPRIDB'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '   annual salary', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_86
+    layout_properties: {grid_position: 'ZZFKAT,NNUAEJ'}
+  - type: Label
+    properties: {}
+    name: label_87
+    layout_properties: {grid_position: 'ZZFKAT,LRVZFB'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '   designation', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_88
+    layout_properties: {grid_position: 'QBHSVZ,PVGPNF'}
+  - type: Label
+    properties: {}
+    name: label_89
+    layout_properties: {grid_position: 'QBHSVZ,YFGXRL'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '   account name', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_90
+    layout_properties: {grid_position: 'USPXTY,NBVESA'}
+  - type: Label
+    properties: {}
+    name: label_91
+    layout_properties: {grid_position: 'USPXTY,CSWNYL'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '   account type', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_92
+    layout_properties: {grid_position: 'HBCBCF,JWTGOT'}
+  - type: Label
+    properties: {}
+    name: label_93
+    layout_properties: {grid_position: 'HBCBCF,GLJJEZ'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '   account number', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_94
+    layout_properties: {grid_position: 'ZDQCTV,TCKCYS'}
+  - type: Label
+    properties: {}
+    name: label_95
+    layout_properties: {grid_position: 'ZDQCTV,USYWTD'}
+  - type: Label
+    properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+      visible: true, text: '   branch name', font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: label_96
+    layout_properties: {grid_position: 'XOGWFB,SDTYQF'}
+  - type: Label
+    properties: {}
+    name: label_97
+    layout_properties: {grid_position: 'XOGWFB,LNKHQV'}
   - type: Button
     properties: {role: null, align: center, tooltip: '', border: '', enabled: true,
       foreground: black, visible: true, text: Edit, font_size: null, font: '', spacing_above: small,

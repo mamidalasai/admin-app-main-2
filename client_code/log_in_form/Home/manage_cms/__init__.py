@@ -48,6 +48,19 @@ class view_profile(view_profileTemplate):
     self.user_type_list = []
     self.approve_list = []
     self.mobile_list = []
+    self.another_email = []
+    self.company_name = []
+    self.organization_type = []
+    self.employment_type = []
+    self.business_no = []
+    self.company_landmark = []
+    self.company_address = []
+    self.annual_salary = []
+    self.designation = []
+    self.account_name = []
+    self.account_type = []
+    self.account_number = []
+    self.account_bank_branch = []
 
     a = -1
     for i in self.data:
@@ -87,6 +100,19 @@ class view_profile(view_profileTemplate):
       self.user_type_list.append(i['usertype'])
       self.approve_list.append(i['registration_approve'])
       self.mobile_list.append(i['mobile'])
+      self.another_email.append(i['another_email'])
+      self.company_name.append(i['company_name'])
+      self.organization_type.append(i['organization_type'])
+      self.employment_type.append(i['employment_type'])
+      self.business_no.append(i['business_no'])
+      self.company_landmark.append(i['company_landmark'])
+      self.company_address.append(i['company_address'])
+      self.annual_salary.append(i['annual_salary'])
+      self.designation.append(i['designation'])
+      self.account_name.append(i['account_name'])
+      self.account_type.append(i['account_type'])
+      self.account_number.append(i['account_number'])
+      self.account_bank_branch.append(i['account_bank_branch'])
 
     print(self.company_adress_list)
     if a == -1:
@@ -128,12 +154,25 @@ class view_profile(view_profileTemplate):
         self.label_58.text =  self.proffic_list[b]
         self.label_59.text = self.user_type_list[b]
         self.label_60.text = bool(self.approve_list [b])
+        self.label_74.text = self.another_email[b]
+        self.label_76.text = self.company_name[b]
+        self.label_77.text = self.organization_type[b]
+        self.label_79.text = self.employment_type[b]
+        self.label_81.text = self.business_no[b]
+        self.label_83.text = self.company_landmark[b]
+        self.label_85.text = self.company_address[b]
+        self.label_87.text = self.annual_salary[b]
+        self.label_89.text = self.designation[b]
+        self.label_91.text = self.account_name[b]
+        self.label_93.text = self.account_type[b]
+        self.label_95.text = self.account_number[b]
+        self.label_97.text = self.account_bank_branch[b]
 
-    
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
     customer_id_value = self.label_3.text
     open_form('admin.dashboard.view_profile.edit_form', customer_id_value)
+
 
   def button_3_click(self, **event_args):
     """This method is called when the button is clicked"""
