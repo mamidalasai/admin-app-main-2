@@ -188,4 +188,27 @@ db_schema:
       admin_ui: {width: 200, order: 1}
       type: string
     title: lender
+  product_details:
+    client: none
+    server: full
+    columns:
+    - name: product_id
+      admin_ui: {width: 200, order: 0}
+      type: number
+    - name: product_name
+      admin_ui: {width: 200, order: 1}
+      type: string
+    - name: product_discription
+      admin_ui: {width: 200, order: 2}
+      type: string
+    - name: membership_type
+      admin_ui: {width: 200, order: 3}
+      type: string
+    - name: interest_type
+      admin_ui: {width: 200, order: 4}
+      type: string
+    - name: max_days
+      admin_ui: {width: 200, order: 5}
+      type: number
+    title: product_details
 renamed: true
