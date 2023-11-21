@@ -12,7 +12,7 @@ class view_profile(view_profileTemplate):
 
     # Any code you write here will run before the form opens.
     self.data = tables.app_tables.user_profile.search()
-
+    
     self.id_list = []
     self.name_list = []
     self.status_list = []
@@ -73,6 +73,12 @@ class view_profile(view_profileTemplate):
     self.college_id = []
     self.college_address = []
     self.running_loan = []
+    self.profile = []
+    self.aadhaar_photo = []
+    self.pan_photo = []
+    self.emp_id_proof = []
+    self.last_six_month_bank_proof = []
+    self.college_proof = []
 
     a = -1
     for i in self.data:
@@ -137,6 +143,12 @@ class view_profile(view_profileTemplate):
       self.college_id.append(i['college_id'])
       self.college_address.append(i['college_address'])
       self.running_loan.append('running_Home_Loan')
+      self.profile.append(i['user_photo'])
+      self.aadhaar_photo.append(i['aadhaar_photo'])
+      self.pan_photo.append(i['pan_photo'])
+      self.emp_id_proof.append(i['emp_id_proof'])
+      self.last_six_month_bank_proof.append(i['last_six_month_bank_proof'])
+      self.college_proof.append(i['college_proof'])
 
     print(self.company_adress_list)
     if a == -1:
@@ -203,6 +215,13 @@ class view_profile(view_profileTemplate):
         self.label_117.text = self.college_id[b]
         self.label_119.text = self.college_address[b]
         self.label_121.text = self.running_loan[b]
+        self.image_2.source = self.profile[b]
+        self.image_3.source = self.aadhaar_photo[b]
+        self.image_4.source = self.pan_photo[b]
+        self.image_5.source = self.emp_id_proof[b]
+        self.image_6.source = self.last_six_month_bank_proof[b]
+        self.image_7.source = self.college_proof[b]
+
 
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
