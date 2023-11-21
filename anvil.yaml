@@ -4,7 +4,7 @@ services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: log_in_form.Form4}
+startup: {type: form, module: Log_in_Home.Form11}
 package_name: Admin_app
 allow_embedding: false
 name: admin-app-main
@@ -189,7 +189,7 @@ db_schema:
       type: string
     title: lender
   product_details:
-    client: none
+    client: full
     server: full
     columns:
     - name: product_id
@@ -198,8 +198,8 @@ db_schema:
     - name: product_name
       admin_ui: {width: 200, order: 1}
       type: string
-    - name: product_discription
-      admin_ui: {width: 200, order: 2}
+    - name: product_categories
+      admin_ui: {order: 2, width: 200}
       type: string
     - name: membership_type
       admin_ui: {width: 200, order: 3}
@@ -209,6 +209,18 @@ db_schema:
       type: string
     - name: max_days
       admin_ui: {width: 200, order: 5}
+      type: number
+    - name: roi
+      admin_ui: {width: 200, order: 7}
+      type: number
+    - name: discount_coupons
+      admin_ui: {width: 200, order: 8}
+      type: string
+    - name: min_days
+      admin_ui: {order: 5.5, width: 200}
+      type: string
+    - name: processing_fee
+      admin_ui: {width: 200, order: 9}
       type: number
     title: product_details
 renamed: true
