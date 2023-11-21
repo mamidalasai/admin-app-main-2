@@ -44,11 +44,25 @@ class Form11(Form11Template):
     anvil.server.call('product_details', product_id, product_name, product_categories, processing_fee, extension_fee, membership_type, interest_type, max_days, min_days, roi, discount_coupons)
     alert("Submitted succesfully")
 
-  def check_box_1_change(self, **event_args):
+  def check_box_3_change(self, **event_args):
     """This method is called when this checkbox is checked or unchecked"""
-    profile_visible = self.check_box_1.checked
-    if not profile_visible :
-      self.text_box_1.hide_text
+    product_visibility = self.check_box_3.checked
+    if not product_visibility :
+      self.text_box_1.text = self.visible
+      self.text_box_2.text = v
+      self.text_area_1.text
+      self.drop_down_1.selected_value
+      self.text_box_3.text
+      self.text_box_4.text
+      self.drop_down_2.selected_value
+      self.radio_button_1.selected
+      self.drop_down_3.selected_value
+      self.drop_down_4.selected_value
+      self.text_box_5.text
+      self.radio_button_3.selected
+
+      
+    
 
   
 
