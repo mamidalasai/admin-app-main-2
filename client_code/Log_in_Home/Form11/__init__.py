@@ -49,13 +49,13 @@ class Form11(Form11Template):
     product_visibility = self.check_box_3.checked
     if not product_visibility :
       self.text_box_1.text = self.visible
-      self.text_box_2.text = v
-      self.text_area_1.text
-      self.drop_down_1.selected_value
-      self.text_box_3.text
-      self.text_box_4.text
-      self.drop_down_2.selected_value
-      self.radio_button_1.selected
+      self.text_box_2.text = self.visible
+      self.text_area_1.text = self.visible
+      self.drop_down_1.selected_value = self.visible
+      self.text_box_3.text = self.visible
+      self.text_box_4.text = self.visible
+      self.drop_down_2.selected_value = self.visible
+      self.radio_button_1.selected = s
       self.drop_down_3.selected_value
       self.drop_down_4.selected_value
       self.text_box_5.text
