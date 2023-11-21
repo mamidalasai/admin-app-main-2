@@ -17,39 +17,38 @@ class Form11(Form11Template):
 
     product_id = int(self.text_box_1.text)
     product_name = self.text_box_2.text
-    product_discription = self.text_area_1.text
     product_categories = self.drop_down_1.selected_value
     processing_fee = int(self.text_box_3.text)
     extension_fee = int(self.text_box_4.text)
     discount_coupons = self.radio_button_3.selected
+    if discount_coupons :
+      discount_coupons = self.radio_button_3.text
+    else :
+      discount_coupons = self.radio_button_4.text
     membership_type = self.drop_down_2.selected_value
     print(membership_type)
     interest_type = self.radio_button_1.selected
     if interest_type :
-      print(self.radio_button_1.text)
+      interest_type = self.radio_button_1.text
     else :
-      print(self.radio_button_2.text)
+      interest_type = self.radio_button_2.text
     min_days = int(self.drop_down_3.selected_value)
     print(min_days)
     max_days = int(self.drop_down_4.selected_value)
     print(max_days)
-    roi = self.text_box_5.text
+    roi = int(self.text_box_5.text)
     print(roi)
+    
 
-    if product_id == "" or product_name == "" or membership_type == "" or processing_fee == "" or extension_fee == "" or interest_type == "" or max_days == "" or min_days == "" or product_categories == "" or discount_coupons == "" or roi == "":
-      Notification("Fill All Required Details").show()
-    else:
-      anvil.server.call('product_details',
-                        product_id,
-                        product_name,
-                        membership_type,
-                        processing_fee,
-                        extension_fee,
-                        interest_type,
-                        max_days,
-                        min_days,
-                        product_discription,
-                        discount_coupons,
-                        roi)
-      alert("Submitted succesfully")
+    
+    anvil.server.call('product_details', product_id, product_name, product_categories, processing_fee, extension_fee, membership_type, interest_type, max_days, min_days, roi, discount_coupons)
+    alert("Submitted succesfully")
+
+  def check_box_1_change(self, **event_args):
+    """This method is called when this checkbox is checked or unchecked"""
+    profile_visible = self.check_box_1.checked
+    if not profile_visible :
+      self.text_box_1.hide_text
+
+  
 
