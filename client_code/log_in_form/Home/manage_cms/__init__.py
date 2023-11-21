@@ -61,6 +61,18 @@ class view_profile(view_profileTemplate):
     self.account_type = []
     self.account_number = []
     self.account_bank_branch = []
+    self.ifsc_code = []
+    self.salary_type = []
+    self.select_bank = []
+    self.net_bank = []
+    self.father_name = []
+    self.father_age = []
+    self.mother_name = []
+    self.mother_age = []
+    self.college_name = []
+    self.college_id = []
+    self.college_address = []
+    self.running_loan = []
 
     a = -1
     for i in self.data:
@@ -113,6 +125,18 @@ class view_profile(view_profileTemplate):
       self.account_type.append(i['account_type'])
       self.account_number.append(i['account_number'])
       self.account_bank_branch.append(i['account_bank_branch'])
+      self.ifsc_code.append(i['ifsc_code'])
+      self.salary_type.append(i['salary_type'])
+      self.select_bank.append(i['select_bank'])
+      self.net_bank.append(i['net_bank'])
+      self.father_name.append(i['father_name'])
+      self.father_age.append(i['father_age'])
+      self.mother_name.append(i['mother_name'])
+      self.mother_age.append(i['mother_age'])
+      self.college_name.append(i['college_name'])
+      self.college_id.append(i['college_id'])
+      self.college_address.append(i['college_address'])
+      self.running_loan.append('running_Home_Loan')
 
     print(self.company_adress_list)
     if a == -1:
@@ -167,17 +191,29 @@ class view_profile(view_profileTemplate):
         self.label_93.text = self.account_type[b]
         self.label_95.text = self.account_number[b]
         self.label_97.text = self.account_bank_branch[b]
+        self.label_99.text = self.ifsc_code[b]
+        self.label_101.text = self.salary_type[b]
+        self.label_103.text = self.select_bank[b]
+        self.label_105.text = self.net_bank[b]
+        self.label_107.text = self.father_name[b]
+        self.label_109.text = self.father_age[b]
+        self.label_111.text = self.mother_name[b]
+        self.label_113.text = self.mother_age[b]
+        self.label_115.text = self.college_name[b]
+        self.label_117.text = self.college_id[b]
+        self.label_119.text = self.college_address[b]
+        self.label_121.text = self.running_loan[b]
 
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
     customer_id_value = self.label_3.text
-    open_form('admin.dashboard.view_profile.edit_form', customer_id_value)
+    open_form('admin.dashboard.borrowers.view_profile.edit_form', customer_id_value)
 
 
   def button_3_click(self, **event_args):
     """This method is called when the button is clicked"""
     customer_id_value = self.label_3.text
-    open_form('admin.dashboard.view_profile.update_form', customer_id_value)
+    open_form('admin.dashboard.borrowers.view_profile.update_form', customer_id_value)
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""

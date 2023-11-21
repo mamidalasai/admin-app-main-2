@@ -61,8 +61,10 @@ class admin_view_profile(admin_view_profileTemplate):
       print(self.result)
       print(a)
 
-
-
   def link_1_click(self, **event_args):
     """This method is called when the link is clicked"""
     open_form('admin.dashboard')
+
+
+
+  
