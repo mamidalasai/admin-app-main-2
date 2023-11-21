@@ -66,3 +66,5 @@ def lender(customer_id, email_id):
   app_tables.lender.add_row(customer_id=customer_id,
                             email_id=email_id
                            )
+@anvil.server.callable
+def 
