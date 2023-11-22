@@ -44,22 +44,39 @@ class Form11(Form11Template):
     anvil.server.call('product_details', product_id, product_name, product_categories, processing_fee, extension_fee, membership_type, interest_type, max_days, min_days, roi, discount_coupons)
     alert("Submitted succesfully")
 
+    
+
   def check_box_3_change(self, **event_args):
     """This method is called when this checkbox is checked or unchecked"""
     product_visibility = self.check_box_3.checked
-    if not product_visibility :
-      self.text_box_1.text = self.visible
-      self.text_box_2.text = self.visible
-      self.text_area_1.text = self.visible
-      self.drop_down_1.selected_value = self.visible
-      self.text_box_3.text = self.visible
-      self.text_box_4.text = self.visible
-      self.drop_down_2.selected_value = self.visible
-      self.radio_button_1.selected = s
-      self.drop_down_3.selected_value
-      self.drop_down_4.selected_value
-      self.text_box_5.text
-      self.radio_button_3.selected
+    if  product_visibility :
+      self.text_box_1.visible = True
+      self.text_box_2.visible = True
+      self.text_area_1.visible = True
+      self.drop_down_1.visible = True
+      self.text_box_3.visible = True
+      self.text_box_4.visible = True
+      self.drop_down_2.visible = True
+      self.radio_button_1.visible = True
+      self.drop_down_3.visible = True
+      self.drop_down_4.visible =True
+      self.text_box_5.visible = True
+      self.radio_button_3.visible = True
+      self.radio_button_4.visible = True
+    else:
+      self.text_box_1.visible = False
+      self.text_box_2.visible = False
+      self.text_area_1.visible = False
+      self.drop_down_1.visible = False
+      self.text_box_3.visible = False
+      self.text_box_4.visible = False
+      self.drop_down_2.visible = False
+      self.radio_button_1.visible = False
+      self.drop_down_3.visible = False
+      self.drop_down_4.visible =False
+      self.text_box_5.visible = False
+      self.radio_button_3.visible = False
+      self.radio_button_4.visible = False
 
       
     
