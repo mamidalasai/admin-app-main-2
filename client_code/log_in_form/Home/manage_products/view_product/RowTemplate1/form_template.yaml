@@ -1,0 +1,33 @@
+container: {type: DataRowPanel}
+components:
+- type: Label
+  properties: {}
+  name: label_1
+  layout_properties: {column: FFWDRK}
+  data_bindings:
+  - {property: text, code: 'self.item[''product_id'']'}
+- type: Label
+  properties: {}
+  name: label_2
+  layout_properties: {column: HRSUSQ}
+  data_bindings:
+  - {property: text, code: 'self.item[''product_name'']'}
+- type: Label
+  properties: {}
+  name: label_3
+  layout_properties: {column: OSFZIT}
+  data_bindings:
+  - {property: text, code: 'self.item[''product_categories'']'}
+- type: Label
+  properties: {}
+  name: label_4
+  layout_properties: {column: KQPQPX}
+  data_bindings:
+  - {property: text, code: 'self.item[''processing_fee'']'}
+- type: Label
+  properties: {}
+  name: label_5
+  layout_properties: {column: CNUMZY}
+  data_bindings:
+  - {property: text, code: 'self.item[''extension_fee'']'}
+is_package: true
