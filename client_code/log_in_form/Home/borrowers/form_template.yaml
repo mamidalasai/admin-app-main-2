@@ -69,8 +69,4 @@ components:
       background: ''
     name: data_grid_1
     layout_properties: {grid_position: 'PMBVHN,NEKBQA'}
-    components:
-    - type: RepeatingPanel
-      properties: {spacing_above: none, spacing_below: none, item_template: admin.dashboard.borrowers.admin_view_profile.RowTemplate2}
-      name: repeating_panel_1
-      layout_properties: {}
+    components: []
