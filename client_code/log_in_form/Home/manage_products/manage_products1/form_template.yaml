@@ -307,7 +307,7 @@ components:
             properties: {role: null, selected: false, align: left, tooltip: '', border: '',
               enabled: true, foreground: '', value: '', visible: true, text: 'Yes',
               font_size: null, font: '', spacing_above: small, spacing_below: small,
-              italic: false, background: '', bold: false, group_name: radioGroup1,
+              italic: false, background: '', bold: false, group_name: radioGroup2,
               underline: false}
             name: radio_button_3
             layout_properties: {x: 177, y: 797.7999877929688, width: 67}
@@ -316,7 +316,7 @@ components:
             properties: {role: null, selected: false, align: left, tooltip: '', border: '',
               enabled: true, foreground: '', value: '', visible: true, text: 'NO',
               font_size: null, font: '', spacing_above: small, spacing_below: small,
-              italic: false, background: '', bold: false, group_name: radioGroup1,
+              italic: false, background: '', bold: false, group_name: radioGroup2,
               underline: false}
             name: radio_button_4
             layout_properties: {x: 266, y: 797.7999877929688, width: 58}
