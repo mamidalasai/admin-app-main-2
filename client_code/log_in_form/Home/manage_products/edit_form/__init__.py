@@ -81,8 +81,9 @@ class edit_form(edit_formTemplate):
       data[a]['discount_coupons'] = self.radio_button_3.text
     
       print(a)
-      open_form('log_in_form.Home.manage_products.view_product.view_profile')
+      open_form('log_in_form.Home.manage_products.view_product.view_profile', self.get)
 
   def link_1_copy_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form('log_in_form.Home.manage_products.view_product.view_profile')
+    open_form('admin.dashboard.manage_products.view_profile', self.get)
+

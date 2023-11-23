@@ -365,9 +365,9 @@ components:
             layout_properties: {x: 0, y: 390.78753662109375, width: 160}
           - type: Label
             properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-              visible: true, text: ' Product  Group', font_size: null, font: '', spacing_above: small,
-              icon_align: left, spacing_below: small, italic: false, background: '',
-              bold: false, underline: false, icon: ''}
+              visible: true, text: ' Product  Groups', font_size: null, font: '',
+              spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+              background: '', bold: false, underline: false, icon: ''}
             name: label_2
             layout_properties: {x: 0, y: 327.6000061035156, width: 160}
           - type: DropDown
