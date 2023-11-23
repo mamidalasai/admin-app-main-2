@@ -192,9 +192,6 @@ db_schema:
     client: full
     server: full
     columns:
-    - name: product_id
-      admin_ui: {width: 200, order: 0}
-      type: number
     - name: product_name
       admin_ui: {width: 200, order: 1}
       type: string
@@ -225,5 +222,8 @@ db_schema:
     - name: min_days
       admin_ui: {width: 200, order: 4.5}
       type: number
+    - name: product_id
+      admin_ui: {order: -1, width: 200}
+      type: string
     title: product_details
 renamed: true

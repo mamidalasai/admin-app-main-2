@@ -12,7 +12,7 @@ class manage_products1(manage_products1Template):
 
     # Any code you write here will run before the form opens.
     
-    self.id = 1000
+    self.id = 'A' + str(1000000)  
     self.label_1.text = self.id
     self.data = tables.app_tables.product_details.search()
 
@@ -23,9 +23,11 @@ class manage_products1(manage_products1Template):
       a+=1
       self.list_1.append(i['product_id']) 
     if a == -1 :
-      self.id = 1000
+      self.id = 'A' + str(1000000)
+      self.label_1.text = self.id
+      
     else:
-      self.id = self.list_1[-1]+1
+      self.id = 'A'+ str(int(self.list_1[-1][1:])+1)
       self.label_1.text = self.id
    
   def link_1_copy_click(self, **event_args):
