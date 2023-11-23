@@ -12,22 +12,7 @@ class update_form(update_formTemplate):
 
     # Any code you write here will run before the form opens.
 
-        
-    self.id = 1000
-    self.label_1.text = self.id
-    self.data = tables.app_tables.product_details.search()
 
-    a = -1
-    self.list_1 = []
- 
-    for i in self.data:
-      a+=1
-      self.list_1.append(i['product_id']) 
-    if a == -1 :
-      self.id = 1000
-    else:
-      self.id = self.list_1[-1]+1
-      self.label_1.text = self.id
    
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""

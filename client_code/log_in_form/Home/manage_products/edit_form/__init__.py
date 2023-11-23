@@ -46,7 +46,10 @@ class edit_form(edit_formTemplate):
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    if self.lable_1.text == "" or self.text_box_2.text == ""  or self.text_box_3.text == "" or self.text_box_4.text  == "" or  self.drop_down_2.selected_value == "" or   self.drop_down_3.selected_value == "" or self.drop_down_4.selected_value == "" or self.text_box_5.text == "":
+    open_form('log_in_form.Home.manage_products.view_product')
+
+    
+    if  self.text_box_2.text == ""  or self.text_box_3.text == "" or self.text_box_4.text  == "" or  self.drop_down_2.selected_value == "" or   self.drop_down_3.selected_value == "" or self.drop_down_4.selected_value == "" or self.text_box_5.text == "":
       Notification("Fill All Required Details").show()
     else:
       data = tables.app_tables.product_details.search()
@@ -57,7 +60,7 @@ class edit_form(edit_formTemplate):
       if a == -1:
         alert("No Data Available Here")
       else:
-       data[a]['product_id'] = int(self.text_box_1.text)
+
        data[a]['product_name'] = self.text_box_2.text
        data[a]['processing_fee'] = int(self.text_box_3.text)
        data[a]['extension_fee'] = int(self.text_box_4.text)
