@@ -2,12 +2,6 @@ container: {type: DataRowPanel}
 components:
 - type: Label
   properties: {}
-  name: label_1
-  layout_properties: {column: FFWDRK}
-  data_bindings:
-  - {property: text, code: 'self.item[''product_id'']'}
-- type: Label
-  properties: {}
   name: label_2
   layout_properties: {column: HRSUSQ}
   data_bindings:
@@ -30,4 +24,11 @@ components:
   layout_properties: {column: CNUMZY}
   data_bindings:
   - {property: text, code: 'self.item[''extension_fee'']'}
+- type: Link
+  properties: {}
+  name: link_1
+  layout_properties: {column: FFWDRK}
+  event_bindings: {click: link_1_click}
+  data_bindings:
+  - {property: text, code: 'self.item[''product_id'']'}
 is_package: true
