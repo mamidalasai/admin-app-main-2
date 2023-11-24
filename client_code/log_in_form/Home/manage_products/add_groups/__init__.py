@@ -27,8 +27,3 @@ class add_groups(add_groupsTemplate):
     get_customer_id_value = self.drop_down_1.selected_value
     open_form('log_in_form.Home.manage_products.add_categories',get_customer_id_value)
 
-    if product_group == "" :
-       Notification("Fill All Required Details").show()
-    else:
-     anvil.server.call('product_details', product_group)
-    open_form('log_in_form.Home.manage_products.add_categories',get_customer_id_value)

@@ -40,7 +40,6 @@ class manage_products1(manage_products1Template):
 
     product_name = self.text_box_2.text
     product_discription = self.text_area_1.text
-    product_categories = self.drop_down_1.selected_value
     processing_fee = int(self.text_box_3.text)
     extension_fee = int(self.text_box_4.text)
     discount_coupons = self.radio_button_3.text
@@ -61,7 +60,7 @@ class manage_products1(manage_products1Template):
     if product_name == "" or membership_type == "" or processing_fee == "" or extension_fee == "" or interest_type == "" or max_days == "" or min_days == ""  or discount_coupons == "" or roi == "":
       Notification("Fill All Required Details").show()
     else:
-     anvil.server.call('product_details', self.id, product_name, processing_fee, extension_fee, membership_type, interest_type, max_days, min_days, roi, discount_coupons)
+     anvil.server.call('product_details',self.id,product_name,processing_fee,extension_fee,membership_type,interest_type,max_days,min_days,roi,discount_coupons)
      open_form('log_in_form.Home.manage_products.add_groups')
  
 
@@ -72,7 +71,6 @@ class manage_products1(manage_products1Template):
       self.label_1.visible = True
       self.text_box_2.visible = True
       self.text_area_1.visible = True
-      self.drop_down_1.visible = True
       self.text_box_3.visible = True
       self.text_box_4.visible = True
       self.drop_down_2.visible = True
@@ -85,7 +83,6 @@ class manage_products1(manage_products1Template):
     else:
       self.text_box_2.visible = False
       self.text_area_1.visible = False
-      self.drop_down_1.visible = False
       self.text_box_3.visible = False
       self.text_box_4.visible = False
       self.drop_down_2.visible = False
