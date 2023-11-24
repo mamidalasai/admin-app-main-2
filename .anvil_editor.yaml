@@ -34,6 +34,8 @@ unique_ids:
     Log_in_Home: '1698727115891669303119860.9404'
     log_in_form.Home.manage_products: '1698510531650695240800375.4204'
     log_in_form.Home.loan_management.lapsed: '169900766496418104210797.048603'
+    log_in_form.Home.loan_management.defaulters.row: '1700809665088649383716548.1107'
+    log_in_form.Home.loan_management.defaulters.view_profile: '1700809539524917769017884.2534'
     log_in_form.Home.manage_settings.manage_roi: '1698728518958724320447228.9803'
     log_in_form.Home.manage_settings.manage_fee.fee_edit_form: '1699363428965272828870498.47583'
     log_in_form.Home.manage_products.manage_products1: '1700660507863931940498620.2151'
