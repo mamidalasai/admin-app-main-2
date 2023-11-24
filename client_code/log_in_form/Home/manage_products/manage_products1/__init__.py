@@ -61,7 +61,8 @@ class manage_products1(manage_products1Template):
       Notification("Fill All Required Details").show()
     else:
      anvil.server.call('product_details',self.id,product_name,processing_fee,extension_fee,membership_type,interest_type,max_days,min_days,roi,discount_coupons)
-     open_form('log_in_form.Home.manage_products.add_groups')
+     product_id = self.label_1.text
+     open_form('log_in_form.Home.manage_products.add_groups',product_id)
  
 
   def check_box_3_change(self, **event_args):

@@ -108,15 +108,6 @@ components:
             properties: {}
             name: label_1
             layout_properties: {x: 177, y: 78, width: 213}
-          - type: Button
-            properties: {role: outlined-button, align: center, tooltip: '', border: '',
-              enabled: true, foreground: Black, visible: true, text: NEXT, font_size: null,
-              font: '', spacing_above: small, icon_align: left, spacing_below: small,
-              italic: false, background: '#0876E8', bold: false, underline: false,
-              icon: ''}
-            name: button_1
-            layout_properties: {x: 0, y: 1044.800048828125, width: 699}
-            event_bindings: {click: button_1_click}
           - type: Label
             properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
               visible: true, text: ' Processing Fee', font_size: null, font: '', spacing_above: small,
@@ -334,6 +325,15 @@ components:
               italic: false, background: '', bold: false, checked: false, underline: false}
             name: check_box_2
             layout_properties: {x: 170, y: 921.0500122070312, width: 443}
+          - type: Button
+            properties: {role: outlined-button, align: center, tooltip: '', border: '',
+              enabled: true, foreground: Black, visible: true, text: NEXT, font_size: null,
+              font: '', spacing_above: small, icon_align: left, spacing_below: small,
+              italic: false, background: '#0876E8', bold: false, underline: false,
+              icon: ''}
+            name: button_1
+            layout_properties: {x: -4.999992370605469, y: 983.800048828125, width: 699}
+            event_bindings: {click: button_1_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links
