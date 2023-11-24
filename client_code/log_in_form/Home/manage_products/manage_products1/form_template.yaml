@@ -110,7 +110,7 @@ components:
             layout_properties: {x: 177, y: 78, width: 213}
           - type: Button
             properties: {role: outlined-button, align: center, tooltip: '', border: '',
-              enabled: true, foreground: Black, visible: true, text: SUBMIT, font_size: null,
+              enabled: true, foreground: Black, visible: true, text: NEXT, font_size: null,
               font: '', spacing_above: small, icon_align: left, spacing_below: small,
               italic: false, background: '#0876E8', bold: false, underline: false,
               icon: ''}

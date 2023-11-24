@@ -225,5 +225,8 @@ db_schema:
     - name: product_id
       admin_ui: {order: -1, width: 200}
       type: string
+    - name: product_group
+      admin_ui: {width: 200, order: 0}
+      type: string
     title: product_details
 renamed: true

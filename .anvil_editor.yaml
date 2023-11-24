@@ -41,6 +41,7 @@ unique_ids:
     log_in_form.Home.admin_teams.view_profile.edit_form: '1698907575731908465721374.0109'
     log_in_form.Home.manage_cms.row: '1700642248315520962979899.10156'
     log_in_form.Home.risk_pool: '1698510663776338046362020.20764'
+    log_in_form.Home.manage_products.add_groups: '170080498956345881868175.23132'
     log_in_form.Home.borrowers: '1698510391677311917004052.9009'
     log_in_form.Home.manage_products.add_categories: '1700660565187932854949977.6968'
     log_in_form.Home.loan_management.defaulters: '1699007677809133269078101.18561'

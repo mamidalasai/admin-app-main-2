@@ -58,12 +58,11 @@ class manage_products1(manage_products1Template):
     roi = int(self.text_box_5.text)
     print(roi)
 
-    if product_name == "" or membership_type == "" or processing_fee == "" or extension_fee == "" or interest_type == "" or max_days == "" or min_days == "" or product_categories == "" or discount_coupons == "" or roi == "":
+    if product_name == "" or membership_type == "" or processing_fee == "" or extension_fee == "" or interest_type == "" or max_days == "" or min_days == ""  or discount_coupons == "" or roi == "":
       Notification("Fill All Required Details").show()
     else:
-     anvil.server.call('product_details', self.id, product_name, product_categories, processing_fee, extension_fee, membership_type, interest_type, max_days, min_days, roi, discount_coupons)
-     alert("Submitted succesfully")
-     open_form('log_in_form.Home.manage_products')
+     anvil.server.call('product_details', self.id, product_name, processing_fee, extension_fee, membership_type, interest_type, max_days, min_days, roi, discount_coupons)
+     open_form('log_in_form.Home.manage_products.add_groups')
  
 
   def check_box_3_change(self, **event_args):
