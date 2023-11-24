@@ -78,3 +78,4 @@ def product_details(product_id, product_name, processing_fee, extension_fee, mem
                                            max_days = max_days,
                                            min_days = min_days,
                                            roi = roi)
+

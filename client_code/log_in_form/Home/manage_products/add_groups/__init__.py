@@ -23,7 +23,9 @@ class add_groups(add_groupsTemplate):
     open_form('log_in_form.Home.manage_products.manage_products1')
 
   def button_2_click(self, **event_args):
-    """This method is called when the button is clicked"""
+    """This method is called when the button is clicked"""     
     get_customer_id_value = self.drop_down_1.selected_value
     open_form('log_in_form.Home.manage_products.add_categories',get_customer_id_value)
+
+
 
