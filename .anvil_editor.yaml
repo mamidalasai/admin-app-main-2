@@ -14,7 +14,6 @@ unique_ids:
     log_in_form.Home.borrowers.Form6: '1700125087238652600719232.1868'
     log_in_form.Home.loan_management.ots_form: '1699007619743656257377013.5234'
     log_in_form.Home.borrowers.update: '1700125397431298786318844.1817'
-    log_in_form.Home.manage_products.view_categories: '1700660565187932854949977.6968'
     log_in_form: GUGLRS4VVV3FBLZUMSK4OE75PW55BHQW
     log_in_form.Home.manage_settings.manage_membership: '1699008921737741791321030.3928'
     log_in_form.Home.borrowers.Form10: '1700125253376541793405586.8381'
@@ -43,6 +42,7 @@ unique_ids:
     log_in_form.Home.manage_cms.row: '1700642248315520962979899.10156'
     log_in_form.Home.risk_pool: '1698510663776338046362020.20764'
     log_in_form.Home.borrowers: '1698510391677311917004052.9009'
+    log_in_form.Home.manage_products.add_categories: '1700660565187932854949977.6968'
     log_in_form.Home.loan_management.defaulters: '1699007677809133269078101.18561'
     log_in_form.Home.loan_management.under_process: '1699007519934382529687066.75116'
     log_in_form.Home.manage_settings.manage_fee: '1699008892498722156546612.8901'

@@ -63,9 +63,11 @@ class view_profile(view_profileTemplate):
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form('log_in_form.Home.manage_products.edit_form')
+    get_customer_id_value = self.label_1.text
+    open_form('log_in_form.Home.manage_products.edit_form', get_customer_id_value )
 
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form('log_in_form.Home.manage_products.update_form')
+    get_customer_id_value = self.label_1.text
+    open_form('log_in_form.Home.manage_products.update_form', get_customer_id_value )
     
