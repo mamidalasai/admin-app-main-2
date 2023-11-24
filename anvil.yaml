@@ -195,9 +195,6 @@ db_schema:
     - name: product_name
       admin_ui: {width: 200, order: 1}
       type: string
-    - name: product_categories
-      admin_ui: {order: 2, width: 200}
-      type: string
     - name: membership_type
       admin_ui: {width: 200, order: 3}
       type: string
@@ -224,6 +221,12 @@ db_schema:
       type: number
     - name: product_id
       admin_ui: {order: -1, width: 200}
+      type: string
+    - name: product_group
+      admin_ui: {order: 12, width: 200}
+      type: string
+    - name: product_categories
+      admin_ui: {width: 200, order: 13}
       type: string
     title: product_details
 renamed: true

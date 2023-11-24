@@ -3,10 +3,6 @@ container:
   type: HtmlTemplate
   properties: {html: '@theme:standard-page.html'}
 components:
-- type: FlowPanel
-  properties: {}
-  name: navbar_links
-  layout_properties: {slot: nav-right}
 - type: ColumnPanel
   properties: {col_widths: '{}'}
   name: content_panel
@@ -43,7 +39,7 @@ components:
       layout_properties: {grid_position: 'KOVGFD,HSSIVP'}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: '   Product Categories', font_size: null, font: '', spacing_above: small,
+        visible: true, text: '   Product Groups', font_size: null, font: '', spacing_above: small,
         icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
         underline: false, icon: ''}
       name: label_2
@@ -53,14 +49,11 @@ components:
         role: outlined
         align: full
         tooltip: ''
-        placeholder: Enter your Groups
+        placeholder: Enter your Group
         border: ''
         enabled: true
         foreground: ''
-        items: [Home loan balance transfer, Top-up-loan, Pradhan Mantri AWAS Yojana,
-          Joint Home Loans, 'Womens home loan ', Home Construction loan, Plot for purchase,
-          Home loan for private employees, Home loan for government employees, Home loan for bank employees,
-          Home loan for advocates]
+        items: [Personal Loan, Home Loan, Vehicle Loan, Business Loan]
         visible: true
         font_size: null
         font: ''
@@ -74,104 +67,27 @@ components:
       name: drop_down_1
       layout_properties: {grid_position: 'KBPIRE,DZWYPO'}
       event_bindings: {change: drop_down_1_change}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: '   Product Categories', font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_3
-      layout_properties: {grid_position: 'IGDVPC,BJDYEU'}
-    - type: DropDown
-      properties:
-        role: outlined
-        align: full
-        tooltip: ''
-        placeholder: Enter your Groups
-        border: ''
-        enabled: true
-        foreground: ''
-        items: ['Credit Card ', Digital Loans against Mutual Funds, Gold Loans]
-        visible: true
-        font_size: null
-        font: ''
-        spacing_above: small
-        spacing_below: small
-        italic: false
-        background: ''
-        bold: false
-        underline: false
-        include_placeholder: true
-      name: drop_down_2
-      layout_properties: {grid_position: 'IGDVPC,QXNPQR'}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: '   Product Categories', font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_4
-      layout_properties: {grid_position: 'EUCJWM,YNIXHA'}
-    - type: DropDown
-      properties:
-        role: outlined
-        align: full
-        tooltip: ''
-        placeholder: Enter your Groups
-        border: ''
-        enabled: true
-        foreground: ''
-        items: [Car Loans, Two-Wheeler Loans, Pre-owned Car Loans]
-        visible: true
-        font_size: null
-        font: ''
-        spacing_above: small
-        spacing_below: small
-        italic: false
-        background: ''
-        bold: false
-        underline: false
-        include_placeholder: true
-      name: drop_down_3
-      layout_properties: {grid_position: 'EUCJWM,NTCMAO'}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: '   Product Categories', font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_5
-      layout_properties: {grid_position: 'KPPBRM,GRHLRW'}
-    - type: DropDown
-      properties:
-        role: outlined
-        align: full
-        tooltip: ''
-        placeholder: Enter your Groups
-        border: ''
-        enabled: true
-        foreground: ''
-        items: [Working capital loan, Term loan, Equipment financing loans, Letter of Credit,
-          Loan against property, Point-of-Sale (POS) Loans, Invoice financing loans,
-          Business overdraft, Business loans under government schemes]
-        visible: true
-        font_size: null
-        font: ''
-        spacing_above: small
-        spacing_below: small
-        italic: false
-        background: ''
-        bold: false
-        underline: false
-        include_placeholder: true
-      name: drop_down_4
-      layout_properties: {grid_position: 'KPPBRM,VXHNBO'}
   - type: Spacer
     properties: {height: 20}
     name: spacer_1
     layout_properties: {grid_position: 'TMZWZP,MNPQVD'}
   - type: Button
     properties: {role: outlined-button, align: center, tooltip: '', border: '', enabled: true,
-      foreground: '', visible: true, text: SUBMIT, font_size: null, font: '', spacing_above: small,
+      foreground: '', visible: true, text: Preview, font_size: null, font: '', spacing_above: small,
       icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
       underline: false, icon: ''}
     name: button_1
     layout_properties: {grid_position: 'MMIVKL,BLEFSO'}
     event_bindings: {click: button_1_click}
+  - type: Button
+    properties: {role: outlined-button, align: center, tooltip: '', border: '', enabled: true,
+      foreground: '', visible: true, text: Next, font_size: null, font: '', spacing_above: small,
+      icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+      underline: false, icon: ''}
+    name: button_2
+    layout_properties: {grid_position: 'MMIVKL,MNFJAT'}
+    event_bindings: {click: button_2_click}
+- type: FlowPanel
+  properties: {}
+  name: navbar_links
+  layout_properties: {slot: nav-right}
