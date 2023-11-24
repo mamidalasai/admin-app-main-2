@@ -30,10 +30,10 @@ class add_groups(add_groupsTemplate):
       get_product_id.append(i['product_id'])
     if self.get in get_product_id :
       b = get_product_id.index(self.get)
-      data[b]['product_id'] = self.drop_down_1.selected_value
+      data[b]['product_group'] = self.drop_down_1.selected_value
       
     get_customer_id_value = self.drop_down_1.selected_value
-    open_form('log_in_form.Home.manage_products.add_categories',get_customer_id_value)
+    open_form('log_in_form.Home.manage_products.add_categories',get_customer_id_value, self.get)
 
 
 
