@@ -56,6 +56,7 @@ class manage_products1(manage_products1Template):
     print(max_days)
     roi = int(self.text_box_5.text)
     print(roi)
+    if 
 
     if product_name == "" or membership_type == "" or processing_fee == "" or extension_fee == "" or interest_type == "" or max_days == "" or min_days == ""  or discount_coupons == "" or roi == "":
       Notification("Fill All Required Details").show()
