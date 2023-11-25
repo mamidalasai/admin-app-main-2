@@ -40,45 +40,6 @@ class manage_products1(manage_products1Template):
 
     product_name = self.text_box_2.text
     product_discription = self.text_area_1.text
-    product_group = self.drop_down_1.selected_value
-    self.list_1 = []
-    product_categories = self.drop_down_5.selected_value or  self.drop_down_6.selected_value or  self.drop_down_7.selected_value or  self.drop_down_8.selected_value
-    if self.list_1.get == 'Home Loan':
-      self.label_2.visible = True
-      self.drop_down_1.visible = True
-      self.label_3.visible = False
-      self.drop_down_2.visible = False
-      self.label_4.visible = False
-      self.drop_down_3.visible = False
-      self.label_5.visible = False
-      self.drop_down_4.visible = False
-    elif self.list_1.get == 'Personal Loan':
-      self.label_2.visible = False
-      self.drop_down_1.visible = False
-      self.label_3.visible = True
-      self.drop_down_2.visible = True
-      self.label_4.visible = False
-      self.drop_down_3.visible = False
-      self.label_5.visible = False
-      self.drop_down_4.visible = False
-    elif self.list_1.get == 'Vehicle Loan':
-      self.label_2.visible = False
-      self.drop_down_1.visible = False
-      self.label_3.visible = False
-      self.drop_down_2.visible = False
-      self.label_4.visible = True
-      self.drop_down_3.visible = True
-      self.label_5.visible = False
-      self.drop_down_4.visible = False
-    elif self.list_1.get == 'Business Loan':
-      self.label_2.visible = False
-      self.drop_down_1.visible = False
-      self.label_3.visible = False
-      self.drop_down_2.visible = False
-      self.label_4.visible = False
-      self.drop_down_3.visible = False
-      self.label_5.visible = True
-      self.drop_down_4.visible = True
     processing_fee = int(self.text_box_3.text)
     extension_fee = int(self.text_box_4.text)
     discount_coupons = self.radio_button_3.text
