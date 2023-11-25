@@ -34,7 +34,7 @@ class Home(HomeTemplate):
 
   def button_6_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form('log_in_form.Home.manage_products')
+    open_form('log_in_form.Home.manage_products');
 
   def button_7_click(self, **event_args):
     """This method is called when the button is clicked"""
