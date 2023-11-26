@@ -32,6 +32,7 @@ components:
       columns:
       - {id: FFWDRK, title: Product ID, data_key: column_1, $$hashKey: 'object:12087'}
       - {id: HRSUSQ, title: Product Name, data_key: column_2, $$hashKey: 'object:12088'}
+      - {id: UTFBQU, title: Product Group, data_key: column_6, $$hashKey: 'object:298'}
       - {id: OSFZIT, title: Product Categories, data_key: column_3, $$hashKey: 'object:12089'}
       - {id: KQPQPX, title: Processing Fee, data_key: column_4, $$hashKey: 'object:12222'}
       - {id: CNUMZY, title: Extension Fee, data_key: column_5, $$hashKey: 'object:12224'}

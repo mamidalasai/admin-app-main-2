@@ -31,4 +31,10 @@ components:
   event_bindings: {click: link_1_click}
   data_bindings:
   - {property: text, code: 'self.item[''product_id'']'}
+- type: Label
+  properties: {}
+  name: label_1
+  layout_properties: {column: UTFBQU}
+  data_bindings:
+  - {property: text, code: 'self.item[''product_group'']'}
 is_package: true

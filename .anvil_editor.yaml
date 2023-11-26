@@ -12,9 +12,11 @@ unique_ids:
     log_in_form.Home.loan_management.open_loans: '1700989124313805031285606.874'
     log_in_form.Home.manage_settings.manage_facts: '1699008960083449252857088.74243'
     log_in_form.Home.loan_management.rejected_loans.view_profile_2: '1700991235552859923768746.176'
+    log_in_form.Home.borrowers.RowTemplate6: '1700995407730813126852764.7142'
     log_in_form: GUGLRS4VVV3FBLZUMSK4OE75PW55BHQW
     log_in_form.Home.loan_management.approved_loans: '1700989102210788946947726.7357'
     log_in_form.Home.manage_settings.manage_membership: '1699008921737741791321030.3928'
+    log_in_form.Home.borrowers.RowTemplate5: '170099538457826478318064.840023'
     log_in_form.Home.loan_management: '1698510496370567653860910.7308'
     log_in_form.Home.admin_teams.view_profile: '1698854972350390763170561.2675'
     log_in_form.Home.manage_products.edit_form: '170066057911177918763304.68495'
