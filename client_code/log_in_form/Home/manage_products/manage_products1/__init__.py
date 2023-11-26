@@ -40,6 +40,8 @@ class manage_products1(manage_products1Template):
 
     product_name = self.text_box_2.text
     product_discription = self.text_area_1.text
+    product_group = self.drop_down_1.selected_value
+    product_categories = self.drop_down_5.selected_value
     processing_fee = int(self.text_box_3.text)
     extension_fee = int(self.text_box_4.text)
     discount_coupons = self.radio_button_3.text
@@ -57,12 +59,12 @@ class manage_products1(manage_products1Template):
     roi = int(self.text_box_5.text)
     print(roi)
 
-    if product_name == "" or membership_type == "" or processing_fee == "" or extension_fee == "" or interest_type == "" or max_days == "" or min_days == ""  or discount_coupons == "" or roi == "":
+    if product_name == "" or membership_type == "" or processing_fee == "" or extension_fee == "" or interest_type == "" or max_days == "" or min_days == ""  or discount_coupons == "" or roi == "" or product_group == "" or product_categories == "" :
       Notification("Fill All Required Details").show()
     else:
-     anvil.server.call('product_details',self.id,product_name,processing_fee,extension_fee,membership_type,interest_type,max_days,min_days,roi,discount_coupons)
-     product_id = self.label_1.text
-     open_form('log_in_form.Home.manage_products.add_groups',product_id)
+     anvil.server.call('product_details', self.id,product_name,processing_fee,extension_fee,membership_type,interest_type,max_days,min_days,roi,discount_coupons,product_group,product_categories)
+     alert("Submited successfull")
+     open_form('log_in_form.Home.manage_products')
  
 
   def check_box_3_change(self, **event_args):
@@ -94,4 +96,22 @@ class manage_products1(manage_products1Template):
       self.radio_button_3.visible = False
       self.radio_button_4.visible = False
 
-
+  def drop_down_1_change(self, **event_args):
+    """This method is called when an item is selected"""
+    if self.drop_down_1.selected_value == 'Home Loan':
+            # Add items to the dropdown dynamically
+      items_to_add = ['Home loan balance transfer', 'Top-up-loan', 'Pradhan Mantri AWAS Yojana', 'Joint Home Loans', 'Womens home loan', 'Home Construction loan', 'Plot for purchase', 'Home loan for private employees', 'Home loan for government employees', 'Home loan for bank employees', 'Home loan for advocates' ]
+      self.drop_down_5.items = items_to_add
+    elif self.drop_down_1.selected_value == 'Personal Loan':
+            # Add items to the dropdown dynamically
+      items_to_add = ['Credit Card', 'Digital Loans against Mutual Funds', 'Gold Loans']
+      self.drop_down_5.items = items_to_add  
+    elif self.drop_down_1.selected_value == 'Vehicle Loan':
+            # Add items to the dropdown dynamically
+      items_to_add = ['Car Loans', 'Two-Wheeler Loans', 'Pre-owned Car Loans']
+      self.drop_down_5.items = items_to_add  
+    elif self.drop_down_1.selected_value == 'Business Loan':
+            # Add items to the dropdown dynamically
+      items_to_add = ['Working capital loan', 'Term loan', 'Equipment financing loans', 'Letter of Credit', 'Loan against property', 'Point-of-Sale (POS) Loans', 'Invoice financing loans', 'Business overdraft', 'Business loans under government schemes']
+      self.drop_down_5.items = items_to_add  
+   
