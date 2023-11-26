@@ -55,3 +55,23 @@ class loan_management(loan_managementTemplate):
   def link_11_click(self, **event_args):
     """This method is called when the link is clicked"""
     open_form('log_in_form.Home.loan_management.ots_form')
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('log_in_form.Home.loan_management.approved_loans')
+
+  def button_2_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('log_in_form.Home.loan_management.rejected_loans')
+
+  def button_3_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('log_in_form.Home.loan_management.under_process')
+
+  def button_4_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('log_in_form.Home.loan_management.open_loans')
+
+  def button_5_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    open_form('log_in_form.Home.loan_management.closed_loans')

@@ -1,11 +1,11 @@
-from ._anvil_designer import under_processTemplate
+from ._anvil_designer import approved_loansTemplate
 from anvil import *
 import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
-class under_process(under_processTemplate):
+class approved_loans(approved_loansTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
@@ -36,7 +36,7 @@ class under_process(under_processTemplate):
       b = -1
       for i in self.list_4:
         b+=1
-        if i != True and i != False:
+        if i:
           self.index.append(b)
           
       for i in self.index:

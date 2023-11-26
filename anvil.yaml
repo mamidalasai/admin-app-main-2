@@ -176,6 +176,21 @@ db_schema:
     - name: total_repayment
       admin_ui: {order: 9, width: 200}
       type: number
+    - name: application_status
+      admin_ui: {width: 200, order: 10}
+      type: string
+    - name: timestamp
+      admin_ui: {width: 200, order: 11}
+      type: datetime
+    - name: member_rom
+      admin_ui: {width: 200, order: 13}
+      type: string
+    - name: payment_done
+      admin_ui: {width: 200, order: 14}
+      type: number
+    - name: beseem_score
+      admin_ui: {width: 200, order: 15}
+      type: string
     title: loan_details
   lender:
     client: none
