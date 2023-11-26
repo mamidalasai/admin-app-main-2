@@ -15,6 +15,7 @@ class view_profile(view_profileTemplate):
     
     self.id_list = []
     self.name_list = []
+    self.group_list = []
     self.categories_list = []
     self.profee_list = []
     self.extfee_list = []
@@ -30,6 +31,7 @@ class view_profile(view_profileTemplate):
       a+=1
       self.id_list.append(i['product_id'])
       self.name_list.append(i['product_name'])
+      self.group_list.append(i['product_group'])
       self.categories_list.append(i['product_categories'])
       self.profee_list.append(i['processing_fee'])
       self.extfee_list.append(i['extension_fee'])
@@ -56,6 +58,7 @@ class view_profile(view_profileTemplate):
         self.label_9.text = self.min_days[b]
         self.label_10.text = self.roi[b]
         self.label_12.text = self.dis_cou[b]
+        self.label_14.text = self.group_list[b]
 
   def link_1_copy_click(self, **event_args):
     """This method is called when the link is clicked"""

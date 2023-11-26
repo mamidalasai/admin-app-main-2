@@ -170,20 +170,6 @@ components:
           name: label_1
           layout_properties: {x: 177, y: 78, width: 225}
         - type: Label
-          properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-            visible: true, text: ' Product Categories', font_size: null, font: '',
-            spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-            background: '', bold: false, underline: false, icon: ''}
-          name: label_5_copy
-          layout_properties: {x: 7, y: 251.80001831054688, width: 145}
-        - type: Label
-          properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-            visible: true, text: ' Processing Fee', font_size: null, font: '', spacing_above: small,
-            icon_align: left, spacing_below: small, italic: false, background: '',
-            bold: false, underline: false, icon: ''}
-          name: label_6_copy
-          layout_properties: {x: 0, y: 317.8000183105469, width: 152}
-        - type: Label
           properties: {}
           name: label_2
           layout_properties: {x: 177, y: 129.60000610351562, width: 232}
@@ -191,25 +177,6 @@ components:
           properties: {}
           name: label_3
           layout_properties: {x: 177, y: 181.20001220703125, width: 232}
-        - type: Label
-          properties: {}
-          name: label_4
-          layout_properties: {x: 177, y: 251.80001831054688, width: 232}
-        - type: Label
-          properties: {}
-          name: label_5
-          layout_properties: {x: 177, y: 317.8000183105469, width: 232}
-        - type: Label
-          properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-            visible: true, text: ' Extension Fee', font_size: null, font: '', spacing_above: small,
-            icon_align: left, spacing_below: small, italic: false, background: '',
-            bold: false, underline: false, icon: ''}
-          name: label_7_copy
-          layout_properties: {x: 0, y: 385.4000244140625, width: 160}
-        - type: Label
-          properties: {}
-          name: label_6
-          layout_properties: {x: 177, y: 385.4000244140625, width: 232}
         - type: Label
           properties: {}
           name: label_12
@@ -230,6 +197,50 @@ components:
           name: button_2
           layout_properties: {x: 330, y: 867.7999877929688, width: 336}
           event_bindings: {click: button_2_click}
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+            visible: true, text: ' Extension Fee', font_size: null, font: '', spacing_above: small,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: ''}
+          name: label_7_copy
+          layout_properties: {x: 0, y: 418.4000244140625, width: 160}
+        - type: Label
+          properties: {}
+          name: label_6
+          layout_properties: {x: 177.00000762939453, y: 418.4000244140625, width: 232}
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+            visible: true, text: ' Processing Fee', font_size: null, font: '', spacing_above: small,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: ''}
+          name: label_6_copy
+          layout_properties: {x: 0, y: 363.8000183105469, width: 152}
+        - type: Label
+          properties: {}
+          name: label_5
+          layout_properties: {x: 177.00000762939453, y: 363.8000183105469, width: 232}
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+            visible: true, text: ' Product Categories', font_size: null, font: '',
+            spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+            background: '', bold: false, underline: false, icon: ''}
+          name: label_5_copy
+          layout_properties: {x: 0, y: 297.8000183105469, width: 145}
+        - type: Label
+          properties: {}
+          name: label_4
+          layout_properties: {x: 177.00000762939453, y: 297.8000183105469, width: 232}
+        - type: Label
+          properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+            visible: true, text: ' Product Group', font_size: null, font: '', spacing_above: small,
+            icon_align: left, spacing_below: small, italic: false, background: '',
+            bold: false, underline: false, icon: ''}
+          name: label_13
+          layout_properties: {x: 0, y: 242.20001220703125, width: 152}
+        - type: Label
+          properties: {}
+          name: label_14
+          layout_properties: {x: 177.00000762939453, y: 242.20001220703125, width: 160}
 - type: FlowPanel
   properties: {}
   name: navbar_links
