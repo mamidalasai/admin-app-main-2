@@ -11,6 +11,18 @@ class view_profile(view_profileTemplate):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+    self.user = tables.app_tables.user_profile.search()
+    self.type = []
+    self.id = []
+    
+    for i in self.user:
+      self.type.append(i['usertype'])
+      self.id.append(i['coustmer_id'])
+
+    if value_to_display in self.id:
+      a = self.id.index(value_to_display)
+      self.label_34.text = self.type[a]
+      
     self.data = tables.app_tables.loan_details.search()
 
     a = -1
@@ -29,12 +41,12 @@ class view_profile(view_profileTemplate):
     self.list_13 = []
     self.list_14 = []
     self.list_15 = []
-
+    self.list_16 = []
     
     for i in self.data:
       a+=1
       self.list_1.append(i['loan_id'])
-      self.list_2.append(i['customer_id'])
+      self.list_2.append(i['coustmer_id'])
       self.list_3.append(i['full_name'])
       self.list_4.append(i['loan_status'])
       self.list_5.append(i['application_status'])
@@ -42,12 +54,13 @@ class view_profile(view_profileTemplate):
       self.list_7.append(i['max_amount'])
       self.list_8.append(i['interest_rate'])
       self.list_9.append(i['timestamp'])
-      self.list_10.append(i['total_repayment'])
+      self.list_10.append(i['total_repayment_amount'])
       self.list_11.append(i['payment_done'])
       self.list_12.append(i['member_rom'])
       self.list_13.append(i['beseem_score'])
       self.list_14.append(i['email_id'])
       self.list_15.append(i['tenure'])
+      self.list_16.append(i['loan_updated_status'])
     print(a)
 
     if value_to_display in self.list_2:
@@ -67,6 +80,7 @@ class view_profile(view_profileTemplate):
       self.label_26.text = self.list_13[b]
       self.label_28.text = self.list_14[b]
       self.label_30.text = self.list_15[b]
+      self.label_32.text = self.list_16[b]
       
 
   def link_1_click(self, **event_args):
