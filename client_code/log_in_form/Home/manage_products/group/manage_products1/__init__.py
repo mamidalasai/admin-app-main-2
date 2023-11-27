@@ -13,9 +13,9 @@ class manage_products1(manage_products1Template):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
-    received_data = self.text_data
+    received_data = self.get_url_parameter('text_data')
     self.label = received_data if received_data else "No data received"
-    print(self)
+    print(self.label)
 
     
     self.id = 'A' + str(1000000)  
