@@ -6,7 +6,7 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 
 class add_groups(add_groupsTemplate):
-  def __init__(self,text_data,**properties):
+  def __init__(self,**properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
@@ -18,7 +18,6 @@ class add_groups(add_groupsTemplate):
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    text_data = self.text_box_1.text
-    open_form('log_in_form.Home.manage_products',text_data)
+
 
 

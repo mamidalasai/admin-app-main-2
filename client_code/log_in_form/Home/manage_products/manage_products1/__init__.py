@@ -6,7 +6,7 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 
 class manage_products1(manage_products1Template):
-  def __init__(self,text_data, **properties):
+  def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
@@ -32,8 +32,7 @@ class manage_products1(manage_products1Template):
       self.id = 'A'+ str(int(self.list_1[-1][1:])+1)
       self.label_1.text = self.id
 
-    def __init__(self,text_data, **properties):
-     self.drop_down_1.items = [text_data] 
+
    
   def link_1_copy_click(self, **event_args):
     """This method is called when the link is clicked"""
