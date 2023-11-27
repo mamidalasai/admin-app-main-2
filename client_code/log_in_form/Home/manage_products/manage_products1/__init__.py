@@ -6,13 +6,12 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 
 class manage_products1(manage_products1Template):
-  def __init__(self,text_data, **properties):
+  def __init__(self,product_group, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
-    self.drop_down_1.items = [text_data] 
-
+    self.drop_down_1.items = [product_group]
     
     self.id = 'A' + str(1000000)  
     self.label_1.text = self.id
