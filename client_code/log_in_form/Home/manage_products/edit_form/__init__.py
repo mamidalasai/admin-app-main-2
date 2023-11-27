@@ -84,5 +84,5 @@ class edit_form(edit_formTemplate):
 
   def link_1_copy_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form('admin.dashboard.manage_products.view_profile', self.get)
+    open_form('log_in_form.Home.manage_products.view_product.view_profile', self.get)
 
