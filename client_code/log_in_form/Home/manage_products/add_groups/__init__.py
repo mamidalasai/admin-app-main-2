@@ -18,7 +18,7 @@ class add_groups(add_groupsTemplate):
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    product_group = self.text_box_1.text
-    open_form('log_in_form.Home.manage_products.manage_products1',product_group)
+    text_data = self.text_box_1.text
+    open_form('log_in_form.Home.manage_products')
 
 
