@@ -48,122 +48,21 @@ components:
         underline: false, icon: ''}
       name: label_2
       layout_properties: {grid_position: 'KBPIRE,NIWMHU'}
-    - type: DropDown
-      properties:
-        role: outlined
-        align: full
-        tooltip: ''
-        placeholder: Enter your Groups
-        border: ''
-        enabled: true
-        foreground: ''
-        items: [Home loan balance transfer, Top-up-loan, Pradhan Mantri AWAS Yojana,
-          Joint Home Loans, 'Womens home loan ', Home Construction loan, Plot for purchase,
-          Home loan for private employees, Home loan for government employees, Home loan for bank employees,
-          Home loan for advocates]
-        visible: true
-        font_size: null
-        font: ''
-        spacing_above: small
-        spacing_below: small
-        italic: false
-        background: ''
-        bold: false
-        underline: false
-        include_placeholder: true
-      name: drop_down_1
-      layout_properties: {grid_position: 'KBPIRE,DZWYPO'}
-      event_bindings: {change: drop_down_1_change}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: '   Product Categories', font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_3
-      layout_properties: {grid_position: 'IGDVPC,BJDYEU'}
-    - type: DropDown
-      properties:
-        role: outlined
-        align: full
-        tooltip: ''
-        placeholder: Enter your Groups
-        border: ''
-        enabled: true
-        foreground: ''
-        items: ['Credit Card ', Digital Loans against Mutual Funds, Gold Loans]
-        visible: true
-        font_size: null
-        font: ''
-        spacing_above: small
-        spacing_below: small
-        italic: false
-        background: ''
-        bold: false
-        underline: false
-        include_placeholder: true
-      name: drop_down_2
-      layout_properties: {grid_position: 'IGDVPC,QXNPQR'}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: '   Product Categories', font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_4
-      layout_properties: {grid_position: 'EUCJWM,YNIXHA'}
-    - type: DropDown
-      properties:
-        role: outlined
-        align: full
-        tooltip: ''
-        placeholder: Enter your Groups
-        border: ''
-        enabled: true
-        foreground: ''
-        items: [Car Loans, Two-Wheeler Loans, Pre-owned Car Loans]
-        visible: true
-        font_size: null
-        font: ''
-        spacing_above: small
-        spacing_below: small
-        italic: false
-        background: ''
-        bold: false
-        underline: false
-        include_placeholder: true
-      name: drop_down_3
-      layout_properties: {grid_position: 'EUCJWM,NTCMAO'}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: '   Product Categories', font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_5
-      layout_properties: {grid_position: 'KPPBRM,GRHLRW'}
-    - type: DropDown
-      properties:
-        role: outlined
-        align: full
-        tooltip: ''
-        placeholder: Enter your Groups
-        border: ''
-        enabled: true
-        foreground: ''
-        items: [Working capital loan, Term loan, Equipment financing loans, Letter of Credit,
-          Loan against property, Point-of-Sale (POS) Loans, Invoice financing loans,
-          Business overdraft, Business loans under government schemes]
-        visible: true
-        font_size: null
-        font: ''
-        spacing_above: small
-        spacing_below: small
-        italic: false
-        background: ''
-        bold: false
-        underline: false
-        include_placeholder: true
-      name: drop_down_4
-      layout_properties: {grid_position: 'KPPBRM,VXHNBO'}
-  - type: Spacer
-    properties: {height: 20}
-    name: spacer_1
-    layout_properties: {grid_position: 'TMZWZP,MNPQVD'}
+    - type: TextBox
+      properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: Enter Your Product Categories,
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
+      name: text_box_1
+      layout_properties: {grid_position: 'KBPIRE,OSHMYH'}
+    - type: Spacer
+      properties: {height: 20}
+      name: spacer_1
+      layout_properties: {grid_position: 'ACRLCE,DKSIOM'}
+    - type: Button
+      properties: {role: outlined-button, align: center, tooltip: '', border: '',
+        enabled: true, foreground: '', visible: true, text: ADD, font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: button_1
+      layout_properties: {grid_position: 'NUDZNM,BXARSF'}

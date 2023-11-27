@@ -15,3 +15,10 @@ class add_groups(add_groupsTemplate):
   def link_1_click(self, **event_args):
     """This method is called when the link is clicked"""
     open_form('log_in_form.Home.manage_products')
+
+  def button_1_click(self, **event_args):
+    """This method is called when the button is clicked"""
+    text_data = self.text_box_1.text
+
+        # Open Form2 and pass the data
+    open_form('log_in_form.Home.manage_products.manage_products1', text_data=text_data)
