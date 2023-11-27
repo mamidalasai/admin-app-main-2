@@ -33,5 +33,5 @@ class manage_products(manage_productsTemplate):
     open_form('log_in_form.Home.manage_products.add_groups')
     
     
-    
+
     

@@ -44,33 +44,25 @@ components:
         underline: false, icon: ''}
       name: label_2
       layout_properties: {grid_position: 'KBPIRE,NIWMHU'}
-    - type: DropDown
-      properties:
-        role: outlined
-        align: full
-        tooltip: ''
-        placeholder: Enter your Group
-        border: ''
-        enabled: true
-        foreground: ''
-        items: [Personal Loan, Home Loan, Vehicle Loan, Business Loan]
-        visible: true
-        font_size: null
-        font: ''
-        spacing_above: small
-        spacing_below: small
-        italic: false
-        background: ''
-        bold: false
-        underline: false
-        include_placeholder: true
-      name: drop_down_1
-      layout_properties: {grid_position: 'KBPIRE,DZWYPO'}
-      event_bindings: {change: drop_down_1_change}
-  - type: Spacer
-    properties: {height: 20}
-    name: spacer_1
-    layout_properties: {grid_position: 'TMZWZP,MNPQVD'}
+    - type: TextBox
+      properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: Enter your product group,
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
+      name: text_box_1
+      layout_properties: {grid_position: 'KBPIRE,LHDGJR'}
+    - type: Spacer
+      properties: {height: 20}
+      name: spacer_1
+      layout_properties: {grid_position: 'MPGQJO,FSZFYN'}
+    - type: Button
+      properties: {role: outlined-button, align: center, tooltip: '', border: '',
+        enabled: true, foreground: '', visible: true, text: ADD, font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false, icon: ''}
+      name: button_1
+      layout_properties: {grid_position: 'ANMQEN,EJIDEI'}
+      event_bindings: {click: button_1_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links

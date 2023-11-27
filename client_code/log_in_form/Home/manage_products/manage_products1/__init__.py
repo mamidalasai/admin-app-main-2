@@ -11,6 +11,8 @@ class manage_products1(manage_products1Template):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
+
+
     
     self.id = 'A' + str(1000000)  
     self.label_1.text = self.id
@@ -29,6 +31,8 @@ class manage_products1(manage_products1Template):
     else:
       self.id = 'A'+ str(int(self.list_1[-1][1:])+1)
       self.label_1.text = self.id
+
+
    
   def link_1_copy_click(self, **event_args):
     """This method is called when the link is clicked"""
@@ -115,3 +119,4 @@ class manage_products1(manage_products1Template):
       items_to_add = ['Working capital loan', 'Term loan', 'Equipment financing loans', 'Letter of Credit', 'Loan against property', 'Point-of-Sale (POS) Loans', 'Invoice financing loans', 'Business overdraft', 'Business loans under government schemes']
       self.drop_down_5.items = items_to_add  
    
+
