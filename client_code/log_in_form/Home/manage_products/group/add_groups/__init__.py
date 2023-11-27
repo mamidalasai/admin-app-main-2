@@ -7,6 +7,7 @@ from anvil.tables import app_tables
 from anvil import app, open_form
 
 
+
 class add_groups(add_groupsTemplate):
   def __init__(self,**properties):
     # Set Form properties and Data Bindings.
@@ -21,10 +22,6 @@ class add_groups(add_groupsTemplate):
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
     text_data = self.text_box_1.text
-
-    # Open Form2
-    form2 = open_form('log_in_form.Home.manage_products.manage_products1')
-    # Set the text_data property of Form2
-    form2.label_text = text_data
+    self.V= text_data
 
 

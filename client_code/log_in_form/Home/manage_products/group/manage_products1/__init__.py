@@ -13,9 +13,7 @@ class manage_products1(manage_products1Template):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
-    self.text_data = None
-    if self.text_data:
-      self.drop_down_1.items = [self.text_data]
+    text_data = self.text_data 
 
     
     self.id = 'A' + str(1000000)  
@@ -124,6 +122,7 @@ class manage_products1(manage_products1Template):
       self.drop_down_5.items = items_to_add  
    
 
-  def receive_data(self, group):
-        # Use the received data
-       print(group)
+  @classmethod
+  def receive_data(cls, text_data):
+    # Use the received data as needed
+    print(f"Received data in Form2: {text_data}")
