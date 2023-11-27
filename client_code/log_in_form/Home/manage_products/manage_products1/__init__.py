@@ -4,6 +4,8 @@ import anvil.server
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
+from anvil import app
+
 
 class manage_products1(manage_products1Template):
   def __init__(self, **properties):
@@ -11,7 +13,9 @@ class manage_products1(manage_products1Template):
     self.init_components(**properties)
 
     # Any code you write here will run before the form opens.
-
+    self.text_data = None
+    if self.text_data:
+      self.drop_down_1.items = [self.text_data]
 
     
     self.id = 'A' + str(1000000)  
@@ -120,3 +124,6 @@ class manage_products1(manage_products1Template):
       self.drop_down_5.items = items_to_add  
    
 
+  def receive_data(self, group):
+        # Use the received data
+       print(group)
