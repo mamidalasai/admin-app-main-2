@@ -16,8 +16,6 @@ class edit_form(edit_formTemplate):
 
     self.id_list = []
     self.name_list = []
-    self.group_list = []
-    self.categories_list = []
     self.proce_list = []
     self.extension_list = []
     self.mtype_list = []
@@ -32,8 +30,7 @@ class edit_form(edit_formTemplate):
       a+=1
       self.id_list.append(i['product_id'])
       self.name_list.append(i['product_name'])
-      self.group_list.append(i['product_group'])
-      self.categories_list.append(i['product_categories'])
+
       self.proce_list.append(i['processing_fee'])
       self.extension_list.append(i['extension_fee'])
       self.mtype_list.append(i['membership_type'])
@@ -47,8 +44,6 @@ class edit_form(edit_formTemplate):
       c = self.id_list.index(get_customer_id_value)
       self.label_1.text = self.id_list[c]
       self.text_box_2.text = self.name_list[c]
-      self.drop_down_5.text = self.group_list[c]
-      self.drop_down_1.text = self.categories_list[c]
       self.text_box_3.text = self.proce_list[c]
       self.text_box_4.text = self.extension_list[c]
       self.drop_down_2.selected_value = self.mtype_list[c]
@@ -89,5 +84,5 @@ class edit_form(edit_formTemplate):
 
   def link_1_copy_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form('admin.dashboard.manage_products.view_profile', self.get)
+    open_form('log_in_form.Home.manage_products.view_product.view_profile', self.get)
 

@@ -34,7 +34,7 @@ components:
       layout_properties: {grid_position: 'CXRQEH,SLEMYG'}
       event_bindings: {click: link_1_copy_click}
   - type: XYPanel
-    properties: {height: 1115.8000106811523}
+    properties: {height: 997.8000106811523}
     name: xy_panel_1
     layout_properties:
       col_widths: {}
@@ -86,56 +86,47 @@ components:
       properties: {}
       name: label_1
       layout_properties: {x: 177, y: 84, width: 215}
-    - type: Button
-      properties: {role: outlined-button, align: center, tooltip: '', border: '',
-        enabled: true, foreground: Black, visible: true, text: SAVE, font_size: null,
-        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
-        background: '#0876E8', bold: false, underline: false, icon: ''}
-      name: button_1
-      layout_properties: {x: 10, y: 1057, width: 697}
-      event_bindings: {click: button_1_click}
-    - type: CheckBox
-      properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
-        foreground: '', allow_indeterminate: false, visible: true, text: ATL-NL-69-indepndence-RO(10% off on interest),
-        font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
-        background: '', bold: false, checked: false, underline: false}
-      name: check_box_2
-      layout_properties: {x: 177, y: 997.050048828125, width: 443}
-    - type: CheckBox
-      properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
-        foreground: '', allow_indeterminate: false, visible: true, text: ATL-NL-69-indepndence-pf(10% off on processing fee),
-        font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
-        background: '', bold: false, checked: false, underline: false}
-      name: check_box_1
-      layout_properties: {x: 177, y: 944.2000122070312, width: 443}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: Discount  Coupons, font_size: null, font: '', spacing_above: small,
+        visible: true, text: ' Processing Fee', font_size: null, font: '', spacing_above: small,
         icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
         underline: false, icon: ''}
-      name: label_14_copy
-      layout_properties: {x: 0, y: 880.7999877929688, width: 160}
-    - type: RadioButton
-      properties: {role: null, selected: false, align: left, tooltip: '', border: '',
-        enabled: true, foreground: '', value: '', visible: true, text: 'Yes', font_size: null,
-        font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
-        bold: false, group_name: radioGroup2, underline: false}
-      name: radio_button_3
-      layout_properties: {x: 177, y: 880.7999877929688, width: 67}
-      event_bindings: {clicked: radio_button_3_clicked}
-    - type: RadioButton
-      properties: {role: null, selected: false, align: left, tooltip: '', border: '',
-        enabled: true, foreground: '', value: '', visible: true, text: 'NO', font_size: null,
-        font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
-        bold: false, group_name: radioGroup2, underline: false}
-      name: radio_button_4
-      layout_properties: {x: 266, y: 880.7999877929688, width: 58}
+      name: label_6_copy
+      layout_properties: {x: 0, y: 311.79998779296875, width: 160}
+    - type: TextBox
+      properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: Enter Processing fee,
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
+      name: text_box_3
+      layout_properties: {x: 177, y: 311.7875061035156, width: 232}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: ' Extension Fee', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_7_copy
+      layout_properties: {x: 0, y: 373.4000244140625, width: 160}
+    - type: TextBox
+      properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: Enter Extension fee,
+        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
+        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
+        background: '', bold: false, underline: false}
+      name: text_box_4
+      layout_properties: {x: 177, y: 373.3999938964844, width: 232}
+    - type: Label
+      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
+        visible: true, text: ' Interest  Rate(%)', font_size: null, font: '', spacing_above: small,
+        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
+        underline: false, icon: ''}
+      name: label_8_copy
+      layout_properties: {x: 0, y: 442.29998779296875, width: 160}
     - type: ColumnPanel
       properties: {role: null, tooltip: '', border: '', foreground: '', visible: true,
         wrap_on: mobile, col_spacing: medium, spacing_above: small, col_widths: '{}',
         spacing_below: small, background: '#CBCFD0'}
       name: column_panel_2
-      layout_properties: {x: 177, y: 564.2999877929688, width: 517}
+      layout_properties: {x: 177, y: 442.29998779296875, width: 517}
       components:
       - type: Label
         properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
@@ -271,97 +262,48 @@ components:
         layout_properties: {grid_position: 'RBEGUU,FUCJSH'}
     - type: Label
       properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: ' Interest  Rate(%)', font_size: null, font: '', spacing_above: small,
+        visible: true, text: Discount  Coupons, font_size: null, font: '', spacing_above: small,
         icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
         underline: false, icon: ''}
-      name: label_8_copy
-      layout_properties: {x: 0, y: 564.2999877929688, width: 160}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: ' Extension Fee', font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_7_copy
-      layout_properties: {x: 0, y: 505.4000244140625, width: 160}
-    - type: TextBox
-      properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: Enter Extension fee,
-        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
-        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
-        background: '', bold: false, underline: false}
-      name: text_box_4
-      layout_properties: {x: 177, y: 505.4000244140625, width: 232}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: ' Processing Fee', font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_6_copy
-      layout_properties: {x: 0, y: 443.8000183105469, width: 160}
-    - type: TextBox
-      properties: {role: outlined, align: left, hide_text: false, tooltip: '', placeholder: Enter Processing fee,
-        border: '', enabled: true, foreground: '', visible: true, text: '', font_size: null,
-        font: '', spacing_above: small, type: text, spacing_below: small, italic: false,
-        background: '', bold: false, underline: false}
-      name: text_box_3
-      layout_properties: {x: 177, y: 443.79998779296875, width: 232}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: ' Product Categories', font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_5_copy
-      layout_properties: {x: 0, y: 388.8000183105469, width: 160}
-    - type: DropDown
-      properties:
-        role: outlined
-        align: full
-        tooltip: ''
-        placeholder: Enter product categories
-        border: ''
-        enabled: true
-        foreground: ''
-        items: []
-        visible: true
-        font_size: null
-        font: ''
-        spacing_above: small
-        spacing_below: small
-        italic: false
-        background: ''
-        bold: false
-        underline: false
-        include_placeholder: true
-      name: drop_down_1
-      layout_properties: {x: 177, y: 388.79998779296875, width: 232}
-    - type: Label
-      properties: {role: null, align: left, tooltip: '', border: '', foreground: '',
-        visible: true, text: ' Product Group', font_size: null, font: '', spacing_above: small,
-        icon_align: left, spacing_below: small, italic: false, background: '', bold: false,
-        underline: false, icon: ''}
-      name: label_2
-      layout_properties: {x: 0, y: 326, width: 160}
-    - type: DropDown
-      properties:
-        role: outlined
-        align: full
-        tooltip: ''
-        placeholder: Enter Product Group
-        border: ''
-        enabled: true
-        foreground: ''
-        items: []
-        visible: true
-        font_size: null
-        font: ''
-        spacing_above: small
-        spacing_below: small
-        italic: false
-        background: ''
-        bold: false
-        underline: false
-        include_placeholder: true
-      name: drop_down_5
-      layout_properties: {x: 177, y: 326, width: 232}
+      name: label_14_copy
+      layout_properties: {x: 0, y: 765.7999877929688, width: 160}
+    - type: RadioButton
+      properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+        enabled: true, foreground: '', value: '', visible: true, text: 'Yes', font_size: null,
+        font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
+        bold: false, group_name: radioGroup2, underline: false}
+      name: radio_button_3
+      layout_properties: {x: 177, y: 765.7999877929688, width: 67}
+      event_bindings: {clicked: radio_button_3_clicked}
+    - type: RadioButton
+      properties: {role: null, selected: false, align: left, tooltip: '', border: '',
+        enabled: true, foreground: '', value: '', visible: true, text: 'NO', font_size: null,
+        font: '', spacing_above: small, spacing_below: small, italic: false, background: '',
+        bold: false, group_name: radioGroup2, underline: false}
+      name: radio_button_4
+      layout_properties: {x: 266, y: 765.7999877929688, width: 58}
+    - type: CheckBox
+      properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
+        foreground: '', allow_indeterminate: false, visible: true, text: ATL-NL-69-indepndence-pf(10% off on processing fee),
+        font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
+        background: '', bold: false, checked: false, underline: false}
+      name: check_box_1
+      layout_properties: {x: 177, y: 841.2000732421875, width: 443}
+    - type: CheckBox
+      properties: {role: null, align: left, tooltip: '', border: '', enabled: true,
+        foreground: '', allow_indeterminate: false, visible: true, text: ATL-NL-69-indepndence-RO(10% off on interest),
+        font_size: null, font: '', spacing_above: small, spacing_below: small, italic: false,
+        background: '', bold: false, checked: false, underline: false}
+      name: check_box_2
+      layout_properties: {x: 177, y: 894.050048828125, width: 443}
+    - type: Button
+      properties: {role: outlined-button, align: center, tooltip: '', border: '',
+        enabled: true, foreground: Black, visible: true, text: SAVE, font_size: null,
+        font: '', spacing_above: small, icon_align: left, spacing_below: small, italic: false,
+        background: '#0876E8', bold: false, underline: false, icon: ''}
+      name: button_1
+      layout_properties: {x: 6.2000000000000455, y: 940.9000488281249, width: 697}
+      event_bindings: {click: button_1_click}
 - type: FlowPanel
   properties: {}
   name: navbar_links
