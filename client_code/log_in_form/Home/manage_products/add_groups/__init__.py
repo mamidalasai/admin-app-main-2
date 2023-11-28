@@ -22,8 +22,5 @@ class add_groups(add_groupsTemplate):
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
     text_data = self.text_box_1.text
-
-    # Set the global variable in Form2
-    open_form('log_in_form.Home.manage_products.group.manage_products1').text_data = text_data
-
+    anvil.server.call('group', text_data)
 

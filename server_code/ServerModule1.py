@@ -82,5 +82,10 @@ def product_details(product_id, product_name, processing_fee, extension_fee, mem
                                            product_categories=product_categories)
 
 
-@anvil.server.background_task
-def 
+@anvil.server.callable
+def group(group_name):
+  return group_name
+
+@anvil.server.callable
+def get():
+  return group()

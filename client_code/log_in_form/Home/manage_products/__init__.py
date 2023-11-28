@@ -14,7 +14,7 @@ class manage_products(manage_productsTemplate):
 
   def link_2_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form('log_in_form.Home.manage_products.group.manage_products1')
+    open_form('log_in_form.Home.manage_products.manage_products1')
 
   def link_3_click(self, **event_args):
     """This method is called when the link is clicked"""
@@ -30,7 +30,7 @@ class manage_products(manage_productsTemplate):
 
   def link_5_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form('log_in_form.Home.manage_products.group.add_groups')
+    open_form('log_in_form.Home.manage_products.add_groups')
     
     
 

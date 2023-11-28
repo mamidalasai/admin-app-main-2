@@ -12,11 +12,6 @@ class manage_products1(manage_products1Template):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
 
-    # Any code you write here will run before the form opens.
-    received_data = self.get_url_parameter('text_data')
-    self.label = received_data if received_data else "No data received"
-    print(self.label)
-
     
     self.id = 'A' + str(1000000)  
     self.label_1.text = self.id
@@ -36,7 +31,8 @@ class manage_products1(manage_products1Template):
       self.id = 'A'+ str(int(self.list_1[-1][1:])+1)
       self.label_1.text = self.id
 
-
+    d = anvil.server.call('get')
+    alert()
    
   def link_1_copy_click(self, **event_args):
     """This method is called when the link is clicked"""
@@ -124,7 +120,4 @@ class manage_products1(manage_products1Template):
       self.drop_down_5.items = items_to_add  
    
 
-  @classmethod
-  def receive_data(cls, text_data):
-    # Use the received data as needed
-    print(f"Received data in Form2: {text_data}")
+  
