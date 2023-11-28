@@ -91,3 +91,13 @@ def group(name):
 @anvil.server.callable
 def get():
   return group(group_name)
+
+@anvil.server.callable
+def user_issues_bugreports(user_issues, specific_issue, user_discription, image, feedback_form, email_user,coustmer_id):
+ row = app_tables.user_issues_bugreports.add_row(user_issues=user_issues,
+                                                 user_discription=user_discription,
+                                                 specific_issue=specific_issue,
+                                                 image=image,
+                                                 feedback_form=feedback_form,
+                                                 email_user=email_user,
+                                                 coustmer_id=coustmer_id)

@@ -4,7 +4,7 @@ services:
 - source: /runtime/services/tables.yml
   client_config: {}
   server_config: {}
-startup: {type: form, module: log_in_form.Home}
+startup: {type: form, module: Log_in_Home.user_issues.user_bugreport}
 package_name: Admin_app
 allow_embedding: false
 name: admin-app-main
@@ -54,7 +54,7 @@ db_schema:
       type: string
     title: product_details
   user_profile:
-    client: none
+    client: full
     server: full
     columns:
     - name: coustmer_id
@@ -363,6 +363,32 @@ db_schema:
       admin_ui: {width: 200, order: 5}
       type: string
     title: admin_teams
+  user_issues_bugreports:
+    title: user_issues_bugreports
+    client: full
+    server: full
+    columns:
+    - name: coustmer_id
+      admin_ui: {width: 200}
+      type: string
+    - name: email_user
+      admin_ui: {width: 200}
+      type: string
+    - name: user_issues
+      admin_ui: {width: 200}
+      type: string
+    - name: specific_issue
+      admin_ui: {width: 200}
+      type: string
+    - name: user_discription
+      admin_ui: {width: 200}
+      type: string
+    - name: image
+      admin_ui: {width: 200}
+      type: media
+    - name: feedback_form
+      admin_ui: {width: 200}
+      type: string
   loan_details:
     client: full
     server: full
