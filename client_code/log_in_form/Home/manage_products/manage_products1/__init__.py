@@ -32,7 +32,7 @@ class manage_products1(manage_products1Template):
       self.label_1.text = self.id
 
     d = anvil.server.call('get')
-    alert()
+    alert(d)
    
   def link_1_copy_click(self, **event_args):
     """This method is called when the link is clicked"""

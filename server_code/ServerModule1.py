@@ -82,10 +82,12 @@ def product_details(product_id, product_name, processing_fee, extension_fee, mem
                                            product_categories=product_categories)
 
 
+group_name = None
 @anvil.server.callable
-def group(group_name):
+def group(name):
+  group_name = name
   return group_name
 
 @anvil.server.callable
 def get():
-  return group()
+  return group(group_name)
