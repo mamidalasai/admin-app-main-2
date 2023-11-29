@@ -438,6 +438,9 @@ db_schema:
     - name: beseem_score
       admin_ui: {width: 200, order: 15}
       type: string
+    - name: loan_updated_status
+      admin_ui: {width: 200, order: 15}
+      type: string
     title: loan_details
   manage_products:
     client: full
