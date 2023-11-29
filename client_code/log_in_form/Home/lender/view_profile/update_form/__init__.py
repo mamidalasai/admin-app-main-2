@@ -6,12 +6,7 @@ import anvil.tables.query as q
 from anvil.tables import app_tables
 
 class update_form(update_formTemplate):
-  def __init__(self, **properties):
-    # Set Form properties and Data Bindings.
-    self.init_components(**properties)
-
     # Any code you write here will run before the form opens.
-class update_form(update_formTemplate):
   def __init__(self, get_customer_id_value, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
@@ -89,9 +84,8 @@ class update_form(update_formTemplate):
         data[a]['college_address'] = self.text_box_54.text
         data[a]['running_Home_Loan'] = self.text_box_55.text
         print(a)
-        open_form('admin.dashboard.borrowers.view_profile', self.get)
+        open_form('log_in_form.Home.lender.view_profile', self.get)
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form('admin.dashboard.borrowers.view_profile', self.get)
-  
+    open_form('log_in_form.Home.lender.view_profile', self.get)

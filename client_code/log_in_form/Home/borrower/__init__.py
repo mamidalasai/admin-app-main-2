@@ -1,14 +1,11 @@
-from ._anvil_designer import admin_view_profileTemplate
+from ._anvil_designer import borrowerTemplate
 from anvil import *
 import anvil.server
-import anvil.google.auth, anvil.google.drive
-from anvil.google.drive import app_files
-import anvil.users
 import anvil.tables as tables
 import anvil.tables.query as q
 from anvil.tables import app_tables
 
-class admin_view_profile(admin_view_profileTemplate):
+class borrower(borrowerTemplate):
   def __init__(self, **properties):
     # Set Form properties and Data Bindings.
     self.init_components(**properties)
@@ -63,8 +60,9 @@ class admin_view_profile(admin_view_profileTemplate):
 
   def link_1_click(self, **event_args):
     """This method is called when the link is clicked"""
-    open_form('admin.home')
+    open_form('admin.dashboard')
 
 
-
-  
+  def link_1_click(self, **event_args):
+    """This method is called when the link is clicked"""
+    open_form('log_in_form.Home')

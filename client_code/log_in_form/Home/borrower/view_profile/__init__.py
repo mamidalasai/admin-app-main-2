@@ -12,7 +12,7 @@ class view_profile(view_profileTemplate):
 
     # Any code you write here will run before the form opens.
     self.data = tables.app_tables.user_profile.search()
-
+    
     self.id_list = []
     self.name_list = []
     self.status_list = []
@@ -225,13 +225,13 @@ class view_profile(view_profileTemplate):
   def button_2_click(self, **event_args):
     """This method is called when the button is clicked"""
     customer_id_value = self.label_3.text
-    open_form('admin.dashboard.lenders.view_profile_copy.edit_form_copy', customer_id_value)
+    open_form('log_in_form.Home.borrower.view_profile.edit_form', customer_id_value)
 
   def button_3_click(self, **event_args):
     """This method is called when the button is clicked"""
     customer_id_value = self.label_3.text
-    open_form('admin.dashboard.lenders.view_profile_copy.update_form_copy', customer_id_value)
+    open_form('log_in_form.Home.borrower.view_profile.update_form', customer_id_value)
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form('admin.dashboard.lenders')
+    open_form('log_in_form.Home.borrower')

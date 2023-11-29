@@ -5,7 +5,8 @@ components:
   name: link_1
   layout_properties: {column: RSMZQS}
   data_bindings:
-  - {property: text, code: 'self.item[''customer_id'']'}
+  - {property: text, code: 'self.item[''coustmer_id'']'}
+  event_bindings: {click: link_1_click}
 - type: Label
   properties: {}
   name: label_1

@@ -1,18 +1,11 @@
-is_package: true
-container:
-  type: HtmlTemplate
-  properties: {html: '@theme:standard-page.html'}
+container: {type: ColumnPanel}
 components:
-- type: FlowPanel
-  properties: {}
-  name: navbar_links
-  layout_properties: {slot: nav-right}
 - type: ColumnPanel
   properties: {col_widths: '{}'}
   name: content_panel_copy
   layout_properties:
     col_widths: {}
-    grid_position: VSQHCN,TLAMBF
+    grid_position: AMOVTI,QPFRZS
   components:
   - type: Image
     properties: {role: null, vertical_align: center, height: 34, tooltip: '', border: '',
@@ -799,3 +792,4 @@ components:
     name: button_3
     layout_properties: {grid_position: 'TSKUXZ,ODHLUP'}
     event_bindings: {click: button_3_click}
+is_package: true

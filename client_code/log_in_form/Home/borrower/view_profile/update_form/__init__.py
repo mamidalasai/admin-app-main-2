@@ -83,8 +83,9 @@ class update_form(update_formTemplate):
         data[a]['college_address'] = self.text_box_54.text
         data[a]['running_Home_Loan'] = self.text_box_55.text
         print(a)
-        open_form('admin.dashboard.lenders.view_profile_copy', self.get)
+        open_form('log_in_form.Home.borrower.view_profile', self.get)
 
   def button_1_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form('admin.dashboard.lenders.view_profile_copy', self.get)
+    open_form('log_in_form.Home.borrower.view_profile', self.get)
+  
