@@ -62,7 +62,7 @@ class Home(HomeTemplate):
 
   def button_13_click(self, **event_args):
     """This method is called when the button is clicked"""
-    open_form('log_in_form.Home.performance_tracke')
+    open_form('log_in_form.Home.performance_tracker')
     
 
 
