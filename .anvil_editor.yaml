@@ -51,6 +51,7 @@ unique_ids:
     log_in_form.Home.borrower.view_profile.edit_form: '1701246842844965371218764.9501'
     log_in_form.Home.risk_pool: '1698510663776338046362020.20764'
     log_in_form.Home.manage_products.add_groups: '170080498956345881868175.23132'
+    log_in_form.Home.loan_management.lapsed_loans: '170127013260071844932290.964'
     log_in_form.Home.manage_products.add_categories: '1700660565187932854949977.6968'
     log_in_form.Home.loan_management.under_process: '1699007519934382529687066.75116'
     log_in_form.Home.manage_settings.manage_fee: '1699008892498722156546612.8901'
