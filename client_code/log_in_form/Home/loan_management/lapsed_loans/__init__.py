@@ -38,7 +38,7 @@ class lapsed_loans(lapsed_loansTemplate):
       self.loan_due_amount.append(i['total_repayment_amount'])
       self.c_id.append(i['coustmer_id'])
       self.full_name.append(i['full_name'])
-      
+      self.status.append(i['loan_updated_status'])
 
     self.id_1 = []
     for i in self.fourcloser:
@@ -50,7 +50,7 @@ class lapsed_loans(lapsed_loansTemplate):
     for i in self.id:
       if i in self.id_1:
         b = self.id_1.index(i)
-        if (self.loan_due_amount[b] == 0):
+        if (self.loan_amont[b] != 0) and (self.status[b] != "closed"):
           self.index.append(self.id_1[b])
 
     self.result = []
