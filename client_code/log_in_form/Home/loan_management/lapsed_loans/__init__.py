@@ -57,7 +57,7 @@ class lapsed_loans(lapsed_loansTemplate):
     self.days = {}
     for i in self.index:
       c = self.index.index(i)
-      d = d = ((self.today - self.due_list[c]).days >= 1) and ((self.today - self.due_list[c]).days <= 3)
+      d = ((self.today - self.due_list[c]).days >= 1) and ((self.today - self.due_list[c]).days <= 3)
       if (self.due_list[c] < self.today) and (d):
         annual_interest_rate = self.intrest[c]
         days_in_year = 365
