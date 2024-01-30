@@ -102,4 +102,9 @@ def user_issues_bugreports(user_issues, specific_issue, user_discription, image,
                                                  email_user=email_user,
                                                  coustmer_id=coustmer_id)
 
-
+@anvil.server.callable()
+def get_table_data():
+    # Fetch and return data from Anvil table
+    # For example, fetch data from Anvil table 'my_data'
+    data = tables.app_tables.loan_details.search()
+    return data
