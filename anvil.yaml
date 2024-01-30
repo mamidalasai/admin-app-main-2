@@ -560,4 +560,5 @@ db_schema:
       admin_ui: {width: 200, order: 1}
       type: string
     title: log_in_table
+uplink_visible: true
 renamed: true

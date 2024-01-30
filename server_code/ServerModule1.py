@@ -101,3 +101,5 @@ def user_issues_bugreports(user_issues, specific_issue, user_discription, image,
                                                  feedback_form=feedback_form,
                                                  email_user=email_user,
                                                  coustmer_id=coustmer_id)
+
+
